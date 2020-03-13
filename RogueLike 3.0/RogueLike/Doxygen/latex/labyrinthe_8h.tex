@@ -1,0 +1,86 @@
+\hypertarget{labyrinthe_8h}{}\section{Référence du fichier src/labyrinthe.h}
+\label{labyrinthe_8h}\index{src/labyrinthe.\+h@{src/labyrinthe.\+h}}
+
+
+Fichier contenant le prototype des fonctions nous permettant de gérer la création et l\textquotesingle{}affichage du labyrinthe.  
+
+
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}salle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}perso.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}const.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de labyrinthe.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{labyrinthe_8h_ac14ccc6ef670ca1d6a386ddbceada2d0}\label{labyrinthe_8h_ac14ccc6ef670ca1d6a386ddbceada2d0}} 
+void \hyperlink{labyrinthe_8h_ac14ccc6ef670ca1d6a386ddbceada2d0}{Chemin\+Le\+Plus\+Long} (\hyperlink{structLabyrinthe}{Labyrinthe} labyrinthe, int $\ast$labX, int $\ast$labY)
+\begin{DoxyCompactList}\small\item\em Nous permet de savoir quel est la salle la plus éloigner du point de spawn (vas nous servir à savroi dans quel salle faire spawn le boss) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{labyrinthe_8h_a0a437daa9a5720a9e2a862ad5840d9e9}\label{labyrinthe_8h_a0a437daa9a5720a9e2a862ad5840d9e9}} 
+void \hyperlink{labyrinthe_8h_a0a437daa9a5720a9e2a862ad5840d9e9}{Afficher\+Minimap} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, \hyperlink{structSalle}{Salle} salle\mbox{[}\hyperlink{const_8h_a0240ac851181b84ac374872dc5434ee4}{N}\mbox{]}\mbox{[}\hyperlink{const_8h_a52037c938e3c1b126c6277da5ca689d0}{M}\mbox{]}, \hyperlink{structPlayer}{Player} player)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher la minimap en prenans en compte les zones visités ou non (pour le brouillard) ainsi que la transparence si le joueur se trouve en dessous. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{labyrinthe_8h_ac9c9950d92ddaf341926e7dfdcf2d44e}\label{labyrinthe_8h_ac9c9950d92ddaf341926e7dfdcf2d44e}} 
+void \hyperlink{labyrinthe_8h_ac9c9950d92ddaf341926e7dfdcf2d44e}{init\+Mat} (int mat\mbox{[}\hyperlink{const_8h_a0240ac851181b84ac374872dc5434ee4}{N}\mbox{]}\mbox{[}\hyperlink{const_8h_a52037c938e3c1b126c6277da5ca689d0}{M}\mbox{]})
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}initialiser une matrice labyrinthe avec que des murs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{labyrinthe_8h_a122026968176fe1d6314c2fe5368f9ad}\label{labyrinthe_8h_a122026968176fe1d6314c2fe5368f9ad}} 
+void \hyperlink{labyrinthe_8h_a122026968176fe1d6314c2fe5368f9ad}{init\+Lab} (\hyperlink{structLabyrinthe}{Labyrinthe} $\ast$labyrinthe)
+\begin{DoxyCompactList}\small\item\em Permet la génération aléatoire du labyrinthe de taille N$\ast$M (défini dans \hyperlink{const_8h}{const.\+h}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{labyrinthe_8h_ae80f164177c4a91d43dbe86dec168182}\label{labyrinthe_8h_ae80f164177c4a91d43dbe86dec168182}} 
+void \hyperlink{labyrinthe_8h_ae80f164177c4a91d43dbe86dec168182}{Charger\+Lab} (\hyperlink{structLabyrinthe}{Labyrinthe} $\ast$labyrinthe)
+\begin{DoxyCompactList}\small\item\em Permet de générer un labyrinthe de taille N$\ast$M (defini dans \hyperlink{const_8h}{const.\+h}) à l\textquotesingle{}aide d\textquotesingle{}un seed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{labyrinthe_8h_a5a1632c9a205c9605994d786b4d227d6}\label{labyrinthe_8h_a5a1632c9a205c9605994d786b4d227d6}} 
+void \hyperlink{labyrinthe_8h_a5a1632c9a205c9605994d786b4d227d6}{init\+Pile} ()
+\begin{DoxyCompactList}\small\item\em Fonction nous permettant d\textquotesingle{}initier la pile. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{labyrinthe_8h_a410398477825b2212e1663bb0ed4bba7}\label{labyrinthe_8h_a410398477825b2212e1663bb0ed4bba7}} 
+void \hyperlink{labyrinthe_8h_a410398477825b2212e1663bb0ed4bba7}{empiler} (int v)
+\begin{DoxyCompactList}\small\item\em Fonction nous permettant d\textquotesingle{}ajouter un élément à la pile. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{labyrinthe_8h_a53ab5fc47e5e8cef40e528998d949ca3}\label{labyrinthe_8h_a53ab5fc47e5e8cef40e528998d949ca3}} 
+void \hyperlink{labyrinthe_8h_a53ab5fc47e5e8cef40e528998d949ca3}{depiler} (int $\ast$v)
+\begin{DoxyCompactList}\small\item\em Fonction nous permettant d\textquotesingle{}enlever un élement à la pile. \end{DoxyCompactList}\item 
+int \hyperlink{labyrinthe_8h_a7367aae60f9b65ba335852e1236f34e9}{pile\+Vide} ()
+\begin{DoxyCompactList}\small\item\em Fonction nous permettant de savoir si la pile est vide ou non. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{labyrinthe_8h_aaf50cbb9c664f9d54f9647a832232125}\label{labyrinthe_8h_aaf50cbb9c664f9d54f9647a832232125}} 
+int \hyperlink{labyrinthe_8h_aaf50cbb9c664f9d54f9647a832232125}{pile} \mbox{[}\hyperlink{const_8h_af7a16e2716eaac90fb331c55876cf511}{T\+M\+AX}\mbox{]}
+\begin{DoxyCompactList}\small\item\em tableau d\textquotesingle{}entier, nous servant de pile. Sa taille max est défini en constante dans le fichier \hyperlink{const_8h}{const.\+h} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{labyrinthe_8h_ab23513cd1b60a5ce42fdddfb249cbde4}\label{labyrinthe_8h_ab23513cd1b60a5ce42fdddfb249cbde4}} 
+int \hyperlink{labyrinthe_8h_ab23513cd1b60a5ce42fdddfb249cbde4}{sommet}
+\begin{DoxyCompactList}\small\item\em entier nous servant à identifier le sommet de la pile \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fichier contenant le prototype des fonctions nous permettant de gérer la création et l\textquotesingle{}affichage du labyrinthe. 
+
+\begin{DoxyAuthor}{Auteur}
+H\+E\+N\+RY Allan, S\+T\+ER Maxime, G\+A\+I\+S\+NE Maxime, Z\+H\+E\+NG Haoran 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+04/02/2020 
+\end{DoxyDate}
+
+
+\subsection{Documentation des fonctions}
+\mbox{\Hypertarget{labyrinthe_8h_a7367aae60f9b65ba335852e1236f34e9}\label{labyrinthe_8h_a7367aae60f9b65ba335852e1236f34e9}} 
+\index{labyrinthe.\+h@{labyrinthe.\+h}!pile\+Vide@{pile\+Vide}}
+\index{pile\+Vide@{pile\+Vide}!labyrinthe.\+h@{labyrinthe.\+h}}
+\subsubsection{\texorpdfstring{pile\+Vide()}{pileVide()}}
+{\footnotesize\ttfamily int pile\+Vide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction nous permettant de savoir si la pile est vide ou non. 
+
+\begin{DoxyReturn}{Renvoie}
+1 si pile vide, 0 sinon 
+\end{DoxyReturn}

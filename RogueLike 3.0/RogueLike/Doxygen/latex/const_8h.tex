@@ -1,0 +1,258 @@
+\hypertarget{const_8h}{}\section{Référence du fichier src/const.h}
+\label{const_8h}\index{src/const.\+h@{src/const.\+h}}
+
+
+Fichier contenant les definitions importantes, les prototypes du .c ainsi les typedef en vu de les utiliser en tout instantdes fonctions nous permettant de gérer la création et l\textquotesingle{}affichage du labyrinthe.  
+
+
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+mixer.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sys/timeb.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de const.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structMap}{Map}
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}identifié les textures à appliqué dans une salle, et de savoir si celle ci sont considéré comme des murs ou non. \end{DoxyCompactList}\item 
+struct \hyperlink{structMonstre}{Monstre}
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}avoir toutes les informations sur un mob dans une même structure. \end{DoxyCompactList}\item 
+struct \hyperlink{structs__objet}{s\+\_\+objet}
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}avoir toute les informations sur un objet dans une meme structure. \end{DoxyCompactList}\item 
+struct \hyperlink{structs__coffre}{s\+\_\+coffre}
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}avoir toute les informations sur un coffre dans une meme structure. \end{DoxyCompactList}\item 
+struct \hyperlink{structs__inventaire}{s\+\_\+inventaire}
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}avoir toute les informations sur l\textquotesingle{}inventaire du joueur dans une meme structure. \end{DoxyCompactList}\item 
+struct \hyperlink{structSalle}{Salle}
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}identifié les salles indépendament des autres et d\textquotesingle{}y avoir toutes les informations nécessaire indépendamment chacune. \end{DoxyCompactList}\item 
+struct \hyperlink{structPlayer}{Player}
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}avoir toutes les informations sur un joueur dans une même structure. \end{DoxyCompactList}\item 
+struct \hyperlink{structLabyrinthe}{Labyrinthe}
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}avoir toutes les informations sur le labyrinthe dans une même structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{const_8h_aab74b6461d42be63f5a022a6fe56e5c5}\label{const_8h_aab74b6461d42be63f5a022a6fe56e5c5}} 
+\#define {\bfseries G\+O\+D\+\_\+\+M\+OD}~0
+\item 
+\mbox{\Hypertarget{const_8h_a0240ac851181b84ac374872dc5434ee4}\label{const_8h_a0240ac851181b84ac374872dc5434ee4}} 
+\#define \hyperlink{const_8h_a0240ac851181b84ac374872dc5434ee4}{N}~5
+\begin{DoxyCompactList}\small\item\em Permet de definir la taille du labyrinthe en Y. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_a52037c938e3c1b126c6277da5ca689d0}\label{const_8h_a52037c938e3c1b126c6277da5ca689d0}} 
+\#define \hyperlink{const_8h_a52037c938e3c1b126c6277da5ca689d0}{M}~7
+\begin{DoxyCompactList}\small\item\em Permet de definir la taille du labyrinthe en X. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_a608fae13cb35fc3e5844976e383e885a}\label{const_8h_a608fae13cb35fc3e5844976e383e885a}} 
+\#define \hyperlink{const_8h_a608fae13cb35fc3e5844976e383e885a}{T\+A\+I\+L\+L\+E\+\_\+\+S\+A\+L\+L\+E\+\_\+X}~20
+\begin{DoxyCompactList}\small\item\em Permet de definir la taille des salles en X. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_aef95feca591fc0fcfffb4eb5c46ffbf7}\label{const_8h_aef95feca591fc0fcfffb4eb5c46ffbf7}} 
+\#define \hyperlink{const_8h_aef95feca591fc0fcfffb4eb5c46ffbf7}{T\+A\+I\+L\+L\+E\+\_\+\+S\+A\+L\+L\+E\+\_\+Y}~15
+\begin{DoxyCompactList}\small\item\em Permet de definir la taille des salles en Y. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_a22c2b2aa23a461a79661060683611305}\label{const_8h_a22c2b2aa23a461a79661060683611305}} 
+\#define \hyperlink{const_8h_a22c2b2aa23a461a79661060683611305}{T\+A\+I\+L\+L\+E\+\_\+\+T\+I\+LE}~50
+\begin{DoxyCompactList}\small\item\em Permet de definir la taille d\textquotesingle{}un tile (d\textquotesingle{}une \char`\"{}case\char`\"{} de la salle) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_ae5b774340dfc7392d6911f7a2186988c}\label{const_8h_ae5b774340dfc7392d6911f7a2186988c}} 
+\#define \hyperlink{const_8h_ae5b774340dfc7392d6911f7a2186988c}{T\+A\+I\+L\+L\+E\+\_\+\+C\+A\+SE}~35
+\begin{DoxyCompactList}\small\item\em Permet de definir la taille d\textquotesingle{}une case du labyrinthe. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_ab4ecbe1e61ce97d6eaf58aa84167079e}\label{const_8h_ab4ecbe1e61ce97d6eaf58aa84167079e}} 
+\#define \hyperlink{const_8h_ab4ecbe1e61ce97d6eaf58aa84167079e}{L\+A\+R\+G\+E\+U\+R\+\_\+\+M\+I\+N\+I\+M\+AP}~\hyperlink{const_8h_ae5b774340dfc7392d6911f7a2186988c}{T\+A\+I\+L\+L\+E\+\_\+\+C\+A\+SE}$\ast$\hyperlink{const_8h_a52037c938e3c1b126c6277da5ca689d0}{M}
+\begin{DoxyCompactList}\small\item\em On definie la taille de la minimap en largeur avec la taille d\textquotesingle{}une case de labyrinthe$\ast$la taille du labyrinthe en X. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_ad45fe7e6e100bf29a08175d2e916a4e3}\label{const_8h_ad45fe7e6e100bf29a08175d2e916a4e3}} 
+\#define \hyperlink{const_8h_ad45fe7e6e100bf29a08175d2e916a4e3}{H\+A\+U\+T\+E\+U\+R\+\_\+\+M\+I\+N\+I\+M\+AP}~\hyperlink{const_8h_ae5b774340dfc7392d6911f7a2186988c}{T\+A\+I\+L\+L\+E\+\_\+\+C\+A\+SE}$\ast$\hyperlink{const_8h_a0240ac851181b84ac374872dc5434ee4}{N}
+\begin{DoxyCompactList}\small\item\em On definie la taille de la minimap en hauteur avec la taille d\textquotesingle{}une case de labyrinthe$\ast$la taille du labyrinthe en Y. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_a586a4c30ccbcbe94b7776a73d0c6fe18}\label{const_8h_a586a4c30ccbcbe94b7776a73d0c6fe18}} 
+\#define \hyperlink{const_8h_a586a4c30ccbcbe94b7776a73d0c6fe18}{L\+A\+R\+G\+E\+U\+R\+\_\+\+E\+C\+R\+AN}~\hyperlink{const_8h_a22c2b2aa23a461a79661060683611305}{T\+A\+I\+L\+L\+E\+\_\+\+T\+I\+LE}$\ast$\hyperlink{const_8h_a608fae13cb35fc3e5844976e383e885a}{T\+A\+I\+L\+L\+E\+\_\+\+S\+A\+L\+L\+E\+\_\+X}
+\begin{DoxyCompactList}\small\item\em On definie la taille de l\textquotesingle{}écran en largeur avec la taille de la salle en X $\ast$ la taille d\textquotesingle{}un tiles. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_ad86253328fbbbd6eb266efdd6bd2ef09}\label{const_8h_ad86253328fbbbd6eb266efdd6bd2ef09}} 
+\#define \hyperlink{const_8h_ad86253328fbbbd6eb266efdd6bd2ef09}{H\+A\+U\+T\+E\+U\+R\+\_\+\+E\+C\+R\+AN}~\hyperlink{const_8h_a22c2b2aa23a461a79661060683611305}{T\+A\+I\+L\+L\+E\+\_\+\+T\+I\+LE}$\ast$\hyperlink{const_8h_aef95feca591fc0fcfffb4eb5c46ffbf7}{T\+A\+I\+L\+L\+E\+\_\+\+S\+A\+L\+L\+E\+\_\+Y}
+\begin{DoxyCompactList}\small\item\em On definie la taille de l\textquotesingle{}écran en hauteur avec la taille de la salle en Y $\ast$ la taille d\textquotesingle{}un tiles. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_af7a16e2716eaac90fb331c55876cf511}\label{const_8h_af7a16e2716eaac90fb331c55876cf511}} 
+\#define \hyperlink{const_8h_af7a16e2716eaac90fb331c55876cf511}{T\+M\+AX}~100
+\begin{DoxyCompactList}\small\item\em Taille max de la pile. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_a0eed82f9b76040ba959053c6b3ae72e4}\label{const_8h_a0eed82f9b76040ba959053c6b3ae72e4}} 
+\#define \hyperlink{const_8h_a0eed82f9b76040ba959053c6b3ae72e4}{C\+O\+U\+L\+O\+IR}~0
+\begin{DoxyCompactList}\small\item\em Constante pour définir un couloir dans le labyrinthe. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_a528503a3fc17d7c9f3ddfb07899db5c2}\label{const_8h_a528503a3fc17d7c9f3ddfb07899db5c2}} 
+\#define \hyperlink{const_8h_a528503a3fc17d7c9f3ddfb07899db5c2}{M\+UR}~-\/1
+\begin{DoxyCompactList}\small\item\em Constante pour définir un mur dans le labyrinthe. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_ae60dc3a7e8d19e739f573139251ae66b}\label{const_8h_ae60dc3a7e8d19e739f573139251ae66b}} 
+\#define \hyperlink{const_8h_ae60dc3a7e8d19e739f573139251ae66b}{M\+A\+X\+\_\+\+M\+O\+N\+S\+T\+RE}~2
+\begin{DoxyCompactList}\small\item\em Constante pour definir le nombre max de monstre possible dans une salle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_ac073582df7b933b8ce9c9e414e821a5c}\label{const_8h_ac073582df7b933b8ce9c9e414e821a5c}} 
+\#define \hyperlink{const_8h_ac073582df7b933b8ce9c9e414e821a5c}{M\+A\+X\+\_\+\+O\+B\+J\+ET}~30
+\begin{DoxyCompactList}\small\item\em Constante pour definir le nombre max d\textquotesingle{}objet. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_a96c66a1f761bbc8a0ac6794f75cf1d5e}\label{const_8h_a96c66a1f761bbc8a0ac6794f75cf1d5e}} 
+\#define \hyperlink{const_8h_a96c66a1f761bbc8a0ac6794f75cf1d5e}{M\+A\+X\+\_\+\+C\+O\+F\+F\+RE}~3
+\begin{DoxyCompactList}\small\item\em Constante pour definir le nombre max de coffre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_a8afff63861e2077f13e8242825cf2b68}\label{const_8h_a8afff63861e2077f13e8242825cf2b68}} 
+\#define {\bfseries M\+I\+N\+\_\+\+L\+O\+O\+T\+\_\+\+D\+A\+M\+A\+GE}~2
+\item 
+\mbox{\Hypertarget{const_8h_acbd91b3b06cf3f3b649b11ade9ec5e19}\label{const_8h_acbd91b3b06cf3f3b649b11ade9ec5e19}} 
+\#define {\bfseries M\+A\+X\+\_\+\+L\+O\+O\+T\+\_\+\+D\+A\+M\+A\+GE}~8
+\item 
+\mbox{\Hypertarget{const_8h_a8adc927d364de4700d1820b0b353c78a}\label{const_8h_a8adc927d364de4700d1820b0b353c78a}} 
+\#define {\bfseries M\+I\+N\+\_\+\+L\+O\+O\+T\+\_\+\+A\+R\+M\+OR}~2
+\item 
+\mbox{\Hypertarget{const_8h_a1c96d812b832f4b246c310fac4923b63}\label{const_8h_a1c96d812b832f4b246c310fac4923b63}} 
+\#define {\bfseries M\+A\+X\+\_\+\+L\+O\+O\+T\+\_\+\+A\+R\+M\+OR}~8
+\item 
+\mbox{\Hypertarget{const_8h_aab4a120539aae047dcf836ff1522cd9d}\label{const_8h_aab4a120539aae047dcf836ff1522cd9d}} 
+\#define {\bfseries M\+I\+N\+\_\+\+L\+O\+O\+T\+\_\+\+D\+A\+M\+A\+G\+E\+\_\+\+L\+E\+G\+E\+N\+D\+A\+RY}~10
+\item 
+\mbox{\Hypertarget{const_8h_a579a7459c1a079382a56ccbd6206261b}\label{const_8h_a579a7459c1a079382a56ccbd6206261b}} 
+\#define {\bfseries M\+A\+X\+\_\+\+L\+O\+O\+T\+\_\+\+D\+A\+M\+A\+G\+E\+\_\+\+L\+E\+G\+E\+N\+D\+A\+RY}~20
+\item 
+\mbox{\Hypertarget{const_8h_ae12a5d41cfd829bc76e533629bb3227c}\label{const_8h_ae12a5d41cfd829bc76e533629bb3227c}} 
+\#define {\bfseries M\+I\+N\+\_\+\+L\+O\+O\+T\+\_\+\+A\+R\+M\+O\+R\+\_\+\+L\+E\+G\+E\+N\+D\+A\+RY}~10
+\item 
+\mbox{\Hypertarget{const_8h_aedc5d1f3d55af839fd26c6f95f2876ca}\label{const_8h_aedc5d1f3d55af839fd26c6f95f2876ca}} 
+\#define {\bfseries M\+A\+X\+\_\+\+L\+O\+O\+T\+\_\+\+A\+R\+M\+O\+R\+\_\+\+L\+E\+G\+E\+N\+D\+A\+RY}~20
+\end{DoxyCompactItemize}
+\subsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{const_8h_abba99f972374fba2fe4484538ae17a05}\label{const_8h_abba99f972374fba2fe4484538ae17a05}} 
+typedef struct \hyperlink{structs__objet}{s\+\_\+objet} \hyperlink{const_8h_abba99f972374fba2fe4484538ae17a05}{Objet}
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}avoir toute les informations sur un objet dans une meme structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_a25379db459b7480dd1fee01a3075f324}\label{const_8h_a25379db459b7480dd1fee01a3075f324}} 
+typedef struct \hyperlink{structs__coffre}{s\+\_\+coffre} \hyperlink{const_8h_a25379db459b7480dd1fee01a3075f324}{Coffre}
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}avoir toute les informations sur un coffre dans une meme structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{const_8h_a3eb470313bbbc3a8c713e8f40336e254}\label{const_8h_a3eb470313bbbc3a8c713e8f40336e254}} 
+typedef struct \hyperlink{structs__inventaire}{s\+\_\+inventaire} \hyperlink{const_8h_a3eb470313bbbc3a8c713e8f40336e254}{Inventaire}
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}avoir toute les informations sur l\textquotesingle{}inventaire du joueur dans une meme structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{const_8h_ab91b34ae619fcdfcba4522b4f335bf83}{Position} \{ \newline
+\hyperlink{const_8h_ab91b34ae619fcdfcba4522b4f335bf83ac9d3e887722f2bc482bcca9d41c512af}{None}, 
+\hyperlink{const_8h_ab91b34ae619fcdfcba4522b4f335bf83aca11d512a31ff9d5cd1c3cecc5595d2d}{Nord}, 
+\hyperlink{const_8h_ab91b34ae619fcdfcba4522b4f335bf83acd27941d85bb38a80f6b4606af668b95}{Sud}, 
+\hyperlink{const_8h_ab91b34ae619fcdfcba4522b4f335bf83a85b2918e55a712eb2ba11b1a0b4b06f0}{Est}, 
+\newline
+\hyperlink{const_8h_ab91b34ae619fcdfcba4522b4f335bf83ad4fc38b8fdd575951487a1bd4aaa7b75}{Ouest}
+ \}\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}identifier les chemins lors de la génération du labyrinthe. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{const_8h_af249ba5abdd1c250499a0cf84db60c9b}{valide} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de savoir les coordonnées x et y se trouve bien dans le labyrinthe. \end{DoxyCompactList}\item 
+int \hyperlink{const_8h_ada7e39534a10b8d1531f7c49b00e2cad}{valide\+Salle} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de savoir les coordonnées x et y se trouve bien dans la salle. \end{DoxyCompactList}\item 
+int \hyperlink{const_8h_acb6abaefab30480fb0aa38af7d970971}{verif\+Minimap} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de savoir si les coordonnées x et y se trouve sous la minimap. \end{DoxyCompactList}\item 
+int \hyperlink{const_8h_a7a3cb43db5af19f8d664fd4b39ba1539}{verif\+Health\+Bar} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de savoir si les coordonnées x et y se trouve sous la bar de vie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{const_8h_a7b61b490f184c0432718ec4ac535e7dc}\label{const_8h_a7b61b490f184c0432718ec4ac535e7dc}} 
+int {\bfseries V\+O\+L\+U\+ME}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fichier contenant les definitions importantes, les prototypes du .c ainsi les typedef en vu de les utiliser en tout instantdes fonctions nous permettant de gérer la création et l\textquotesingle{}affichage du labyrinthe. 
+
+\begin{DoxyAuthor}{Auteur}
+H\+E\+N\+RY Allan, S\+T\+ER Maxime, G\+A\+I\+S\+NE Maxime, Z\+H\+E\+NG Haoran 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+04/02/2020 
+\end{DoxyDate}
+
+
+\subsection{Documentation du type de l\textquotesingle{}énumération}
+\mbox{\Hypertarget{const_8h_ab91b34ae619fcdfcba4522b4f335bf83}\label{const_8h_ab91b34ae619fcdfcba4522b4f335bf83}} 
+\index{const.\+h@{const.\+h}!Position@{Position}}
+\index{Position@{Position}!const.\+h@{const.\+h}}
+\subsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily enum \hyperlink{const_8h_ab91b34ae619fcdfcba4522b4f335bf83}{Position}}
+
+
+
+Permet d\textquotesingle{}identifier les chemins lors de la génération du labyrinthe. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!const.\+h@{const.\+h}}\index{const.\+h@{const.\+h}!None@{None}}}\mbox{\Hypertarget{const_8h_ab91b34ae619fcdfcba4522b4f335bf83ac9d3e887722f2bc482bcca9d41c512af}\label{const_8h_ab91b34ae619fcdfcba4522b4f335bf83ac9d3e887722f2bc482bcca9d41c512af}} 
+None&Il n\textquotesingle{}y a donc aucun couloir possible \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Nord@{Nord}!const.\+h@{const.\+h}}\index{const.\+h@{const.\+h}!Nord@{Nord}}}\mbox{\Hypertarget{const_8h_ab91b34ae619fcdfcba4522b4f335bf83aca11d512a31ff9d5cd1c3cecc5595d2d}\label{const_8h_ab91b34ae619fcdfcba4522b4f335bf83aca11d512a31ff9d5cd1c3cecc5595d2d}} 
+Nord&Il y a un couloir possible au nord \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sud@{Sud}!const.\+h@{const.\+h}}\index{const.\+h@{const.\+h}!Sud@{Sud}}}\mbox{\Hypertarget{const_8h_ab91b34ae619fcdfcba4522b4f335bf83acd27941d85bb38a80f6b4606af668b95}\label{const_8h_ab91b34ae619fcdfcba4522b4f335bf83acd27941d85bb38a80f6b4606af668b95}} 
+Sud&Il y a un couloir possible au sud \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Est@{Est}!const.\+h@{const.\+h}}\index{const.\+h@{const.\+h}!Est@{Est}}}\mbox{\Hypertarget{const_8h_ab91b34ae619fcdfcba4522b4f335bf83a85b2918e55a712eb2ba11b1a0b4b06f0}\label{const_8h_ab91b34ae619fcdfcba4522b4f335bf83a85b2918e55a712eb2ba11b1a0b4b06f0}} 
+Est&Il y a un couloir possible à l\textquotesingle{}est \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ouest@{Ouest}!const.\+h@{const.\+h}}\index{const.\+h@{const.\+h}!Ouest@{Ouest}}}\mbox{\Hypertarget{const_8h_ab91b34ae619fcdfcba4522b4f335bf83ad4fc38b8fdd575951487a1bd4aaa7b75}\label{const_8h_ab91b34ae619fcdfcba4522b4f335bf83ad4fc38b8fdd575951487a1bd4aaa7b75}} 
+Ouest&Il y a un couloir possible à l\textquotesingle{}ouest \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Documentation des fonctions}
+\mbox{\Hypertarget{const_8h_af249ba5abdd1c250499a0cf84db60c9b}\label{const_8h_af249ba5abdd1c250499a0cf84db60c9b}} 
+\index{const.\+h@{const.\+h}!valide@{valide}}
+\index{valide@{valide}!const.\+h@{const.\+h}}
+\subsubsection{\texorpdfstring{valide()}{valide()}}
+{\footnotesize\ttfamily int valide (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de savoir les coordonnées x et y se trouve bien dans le labyrinthe. 
+
+\begin{DoxyReturn}{Renvoie}
+Vrai ou Faux 
+\end{DoxyReturn}
+\mbox{\Hypertarget{const_8h_ada7e39534a10b8d1531f7c49b00e2cad}\label{const_8h_ada7e39534a10b8d1531f7c49b00e2cad}} 
+\index{const.\+h@{const.\+h}!valide\+Salle@{valide\+Salle}}
+\index{valide\+Salle@{valide\+Salle}!const.\+h@{const.\+h}}
+\subsubsection{\texorpdfstring{valide\+Salle()}{valideSalle()}}
+{\footnotesize\ttfamily int valide\+Salle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de savoir les coordonnées x et y se trouve bien dans la salle. 
+
+\begin{DoxyReturn}{Renvoie}
+Vrai ou Faux 
+\end{DoxyReturn}
+\mbox{\Hypertarget{const_8h_a7a3cb43db5af19f8d664fd4b39ba1539}\label{const_8h_a7a3cb43db5af19f8d664fd4b39ba1539}} 
+\index{const.\+h@{const.\+h}!verif\+Health\+Bar@{verif\+Health\+Bar}}
+\index{verif\+Health\+Bar@{verif\+Health\+Bar}!const.\+h@{const.\+h}}
+\subsubsection{\texorpdfstring{verif\+Health\+Bar()}{verifHealthBar()}}
+{\footnotesize\ttfamily int verif\+Health\+Bar (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de savoir si les coordonnées x et y se trouve sous la bar de vie. 
+
+\begin{DoxyReturn}{Renvoie}
+Vrai ou Faux 
+\end{DoxyReturn}
+\mbox{\Hypertarget{const_8h_acb6abaefab30480fb0aa38af7d970971}\label{const_8h_acb6abaefab30480fb0aa38af7d970971}} 
+\index{const.\+h@{const.\+h}!verif\+Minimap@{verif\+Minimap}}
+\index{verif\+Minimap@{verif\+Minimap}!const.\+h@{const.\+h}}
+\subsubsection{\texorpdfstring{verif\+Minimap()}{verifMinimap()}}
+{\footnotesize\ttfamily int verif\+Minimap (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de savoir si les coordonnées x et y se trouve sous la minimap. 
+
+\begin{DoxyReturn}{Renvoie}
+Vrai ou Faux 
+\end{DoxyReturn}

@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RogueLike: Référence du fichier src/roguelike.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RogueLike
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier roguelike.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fichier contenant la fonction main de notre programme.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="labyrinthe_8h_source.html">labyrinthe.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="saveload_8h_source.html">saveload.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="perso_8h_source.html">perso.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="monstre_8h_source.html">monstre.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="objet_8h_source.html">objet.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="son_8h_source.html">son.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de roguelike.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="roguelike_8c__incl.png" border="0" usemap="#src_2roguelike_8c" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a76d056f8c55f09f4b33d12a8abd2c529"><td class="memItemLeft" align="right" valign="top"><a id="a76d056f8c55f09f4b33d12a8abd2c529"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AfficherFPS</b> (SDL_Renderer *rendu, TTF_Font *police)</td></tr>
+<tr class="separator:a76d056f8c55f09f4b33d12a8abd2c529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a07cd0c8859b9c1434b3ce25d978592"><td class="memItemLeft" align="right" valign="top"><a id="a0a07cd0c8859b9c1434b3ce25d978592"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="roguelike_8c.html#a0a07cd0c8859b9c1434b3ce25d978592">MortPlayer</a> (<a class="el" href="structPlayer.html">Player</a> *player, <a class="el" href="structSalle.html">Salle</a> salle[<a class="el" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="el" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>], <a class="el" href="structLabyrinthe.html">Labyrinthe</a> *labyrinthe)</td></tr>
+<tr class="memdesc:a0a07cd0c8859b9c1434b3ce25d978592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de gerer la mort d'un joueur. <br /></td></tr>
+<tr class="separator:a0a07cd0c8859b9c1434b3ce25d978592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5928f555650227b6086a164843a0834"><td class="memItemLeft" align="right" valign="top"><a id="aa5928f555650227b6086a164843a0834"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="roguelike_8c.html#aa5928f555650227b6086a164843a0834">Affichage</a> (SDL_Renderer *rendu, TTF_Font *police, <a class="el" href="structSalle.html">Salle</a> salle[<a class="el" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="el" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>], <a class="el" href="structPlayer.html">Player</a> player)</td></tr>
+<tr class="memdesc:aa5928f555650227b6086a164843a0834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de gerer tout l'affichage du jeu. <br /></td></tr>
+<tr class="separator:aa5928f555650227b6086a164843a0834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa77fa7c29af0d994685a1929a6bb84b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="roguelike_8c.html#aa77fa7c29af0d994685a1929a6bb84b1">EvolutionMonstres</a> (<a class="el" href="structSalle.html">Salle</a> salle[<a class="el" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="el" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>], <a class="el" href="structPlayer.html">Player</a> player, <a class="el" href="structPlayer.html">Player</a> *p)</td></tr>
+<tr class="memdesc:aa77fa7c29af0d994685a1929a6bb84b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de gerer l'evolution des monstres.  <a href="#aa77fa7c29af0d994685a1929a6bb84b1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa77fa7c29af0d994685a1929a6bb84b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top"><a id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="roguelike_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction main du programme. <br /></td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a2ef448daa64dc4c81936a4836f21776c"><td class="memItemLeft" align="right" valign="top"><a id="a2ef448daa64dc4c81936a4836f21776c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="roguelike_8c.html#a2ef448daa64dc4c81936a4836f21776c">inGame</a> = 0</td></tr>
+<tr class="memdesc:a2ef448daa64dc4c81936a4836f21776c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de savoir si le joueur est dans un menu ou non. <br /></td></tr>
+<tr class="separator:a2ef448daa64dc4c81936a4836f21776c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d26f73a3a33e36c53e39234b6a4ea4"><td class="memItemLeft" align="right" valign="top"><a id="a69d26f73a3a33e36c53e39234b6a4ea4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="roguelike_8c.html#a69d26f73a3a33e36c53e39234b6a4ea4">inMenu</a> = 1</td></tr>
+<tr class="memdesc:a69d26f73a3a33e36c53e39234b6a4ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de savoir si le joueur est en partie ou non. <br /></td></tr>
+<tr class="separator:a69d26f73a3a33e36c53e39234b6a4ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ad58afe2d048dbe9f19e8d24a5aa30"><td class="memItemLeft" align="right" valign="top"><a id="a28ad58afe2d048dbe9f19e8d24a5aa30"></a>
+<a class="el" href="menu_8h.html#af3d52afbb0d088f62e02208b24a9cbd2">Menu</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="roguelike_8c.html#a28ad58afe2d048dbe9f19e8d24a5aa30">menuActuel</a> = Principal</td></tr>
+<tr class="memdesc:a28ad58afe2d048dbe9f19e8d24a5aa30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de savoir dans quel menu le joueur se trouve (si il est dans un menu) <br /></td></tr>
+<tr class="separator:a28ad58afe2d048dbe9f19e8d24a5aa30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a185de786e31af0c36cb407963b0d8cdf"><td class="memItemLeft" align="right" valign="top"><a id="a185de786e31af0c36cb407963b0d8cdf"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>levelActuel</b> = 1</td></tr>
+<tr class="separator:a185de786e31af0c36cb407963b0d8cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b67662d620a977a2cfe519f7ab6273"><td class="memItemLeft" align="right" valign="top"><a id="a45b67662d620a977a2cfe519f7ab6273"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="roguelike_8c.html#a45b67662d620a977a2cfe519f7ab6273">fps</a> = 0</td></tr>
+<tr class="memdesc:a45b67662d620a977a2cfe519f7ab6273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de savoir dans quel niveau le joueur se trouve. <br /></td></tr>
+<tr class="separator:a45b67662d620a977a2cfe519f7ab6273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f11d9a0a47b94f72c2d0e77fb32240"><td class="memItemLeft" align="right" valign="top"><a id="a76f11d9a0a47b94f72c2d0e77fb32240"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>n</b> = 0</td></tr>
+<tr class="separator:a76f11d9a0a47b94f72c2d0e77fb32240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e582e232d17b9821d101b0fbb7e837b"><td class="memItemLeft" align="right" valign="top"><a id="a2e582e232d17b9821d101b0fbb7e837b"></a>
+struct timeb&#160;</td><td class="memItemRight" valign="bottom"><b>lastFPS</b></td></tr>
+<tr class="separator:a2e582e232d17b9821d101b0fbb7e837b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fichier contenant la fonction main de notre programme. </p>
+<dl class="section author"><dt>Auteur</dt><dd>HENRY Allan, STER Maxime, GAISNE Maxime, ZHENG Haoran </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>04/02/2020 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="aa77fa7c29af0d994685a1929a6bb84b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa77fa7c29af0d994685a1929a6bb84b1">&#9670;&nbsp;</a></span>EvolutionMonstres()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int EvolutionMonstres </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structSalle.html">Salle</a>&#160;</td>
+          <td class="paramname"><em>salle</em>[N][M], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPlayer.html">Player</a>&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structPlayer.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de gerer l'evolution des monstres. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>1 Si le joueur est mort suite a une collision avec un mob </dd>
+<dd>
+0 Sinon </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

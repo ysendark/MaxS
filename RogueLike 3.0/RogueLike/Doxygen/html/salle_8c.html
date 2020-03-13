@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RogueLike: Référence du fichier src/salle.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RogueLike
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier salle.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fichier contenant des fonctions nous permettant de gérer la création et l'affichage des salles.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="salle_8h_source.html">salle.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="monstre_8h_source.html">monstre.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="objet_8h_source.html">objet.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de salle.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="salle_8c__incl.png" border="0" usemap="#src_2salle_8c" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a3c572b16fd87b679844e04e120f2c0f4"><td class="memItemLeft" align="right" valign="top"><a id="a3c572b16fd87b679844e04e120f2c0f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="salle_8c.html#a3c572b16fd87b679844e04e120f2c0f4">initSalle</a> (<a class="el" href="structSalle.html">Salle</a> salle[<a class="el" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="el" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>], int mat[<a class="el" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="el" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>], <a class="el" href="structPlayer.html">Player</a> player)</td></tr>
+<tr class="memdesc:a3c572b16fd87b679844e04e120f2c0f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'initialiser la matrice de type <a class="el" href="structSalle.html" title="Permet d&#39;identifié les salles indépendament des autres et d&#39;y avoir toutes les informations nécessair...">Salle</a>. Si le lieu est un couloir : On vas enregister où se trouve les couloirs à proximité puis indiquer les directions des portes. Si le lieu est un mur : On initialise tout à 0. <br /></td></tr>
+<tr class="separator:a3c572b16fd87b679844e04e120f2c0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a8740b73b4a45122ba6f57c302a8e0"><td class="memItemLeft" align="right" valign="top"><a id="a17a8740b73b4a45122ba6f57c302a8e0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="salle_8c.html#a17a8740b73b4a45122ba6f57c302a8e0">AfficherSalle</a> (SDL_Renderer *rendu, <a class="el" href="structSalle.html">Salle</a> salle, <a class="el" href="structPlayer.html">Player</a> player, int levelActuel)</td></tr>
+<tr class="memdesc:a17a8740b73b4a45122ba6f57c302a8e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'afficher une salle (Zone principal de l'ecran) <br /></td></tr>
+<tr class="separator:a17a8740b73b4a45122ba6f57c302a8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fichier contenant des fonctions nous permettant de gérer la création et l'affichage des salles. </p>
+<dl class="section author"><dt>Auteur</dt><dd>HENRY Allan, STER Maxime, GAISNE Maxime, ZHENG Haoran </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>04/02/2020 </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

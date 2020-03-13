@@ -1,0 +1,73 @@
+\hypertarget{perso_8h}{}\section{Référence du fichier src/perso.h}
+\label{perso_8h}\index{src/perso.\+h@{src/perso.\+h}}
+
+
+Fichier contenant des fonctions nous permettant de gérer la création, la modification et l\textquotesingle{}affichage du joueur.  
+
+
+{\ttfamily \#include \char`\"{}salle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}fevent.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}labyrinthe.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+Graphe des dépendances par inclusion de perso.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{perso_8h_ad2da8ead95f184284e55c1484209c4e7}\label{perso_8h_ad2da8ead95f184284e55c1484209c4e7}} 
+\#define \hyperlink{perso_8h_ad2da8ead95f184284e55c1484209c4e7}{H\+P\+\_\+\+B\+A\+R\+\_\+X}~300
+\begin{DoxyCompactList}\small\item\em Permet de savoir la taille horizontalement de la bar de vie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{perso_8h_a4c2c915926cb775a76ef8277bc144c46}\label{perso_8h_a4c2c915926cb775a76ef8277bc144c46}} 
+\#define \hyperlink{perso_8h_a4c2c915926cb775a76ef8277bc144c46}{H\+P\+\_\+\+B\+A\+R\+\_\+Y}~30
+\begin{DoxyCompactList}\small\item\em Permet de savoir la taille verticalement de la bar de vie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{perso_8h_a54a62144e38aa9ec7b3cd5b06d9dd8a9}\label{perso_8h_a54a62144e38aa9ec7b3cd5b06d9dd8a9}} 
+\#define \hyperlink{perso_8h_a54a62144e38aa9ec7b3cd5b06d9dd8a9}{P\+L\+A\+Y\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+A\+M\+A\+GE}~30
+\begin{DoxyCompactList}\small\item\em Permet de savoir le nombre de dégats que fait le joueur par défaut. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{perso_8h_a750cae3714dcd2e1f482b72131cfd9e2}\label{perso_8h_a750cae3714dcd2e1f482b72131cfd9e2}} 
+\#define \hyperlink{perso_8h_a750cae3714dcd2e1f482b72131cfd9e2}{P\+L\+A\+Y\+E\+R\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+H\+E\+A\+L\+TH}~100
+\begin{DoxyCompactList}\small\item\em Permet de savoir le nombre de points de vies qu\textquotesingle{}a le joueur par défaut. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{perso_8h_a19caac2706a8623683fc73bd94daa2e7}\label{perso_8h_a19caac2706a8623683fc73bd94daa2e7}} 
+void \hyperlink{perso_8h_a19caac2706a8623683fc73bd94daa2e7}{init\+Player} (\hyperlink{structPlayer}{Player} $\ast$player, int labX, int labY, int salleX, int salleY)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}initialiser une structure player. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{perso_8h_a2b821b141a87a6c9dff2dfbcf85ff76f}\label{perso_8h_a2b821b141a87a6c9dff2dfbcf85ff76f}} 
+void \hyperlink{perso_8h_a2b821b141a87a6c9dff2dfbcf85ff76f}{Action\+Salle} (\hyperlink{structInput}{Input} $\ast$in, S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police, \hyperlink{structPlayer}{Player} $\ast$player, \hyperlink{structSalle}{Salle} salle, int $\ast$\hyperlink{roguelike_8c_a2ef448daa64dc4c81936a4836f21776c}{in\+Game}, int $\ast$\hyperlink{roguelike_8c_a69d26f73a3a33e36c53e39234b6a4ea4}{in\+Menu}, int $\ast$level\+Actuel, \hyperlink{menu_8h_af3d52afbb0d088f62e02208b24a9cbd2}{Menu} $\ast$\hyperlink{roguelike_8c_a28ad58afe2d048dbe9f19e8d24a5aa30}{menu\+Actuel}, \hyperlink{structPlayer}{Player} player\+Save, \hyperlink{structSalle}{Salle} salle\+Save\mbox{[}\hyperlink{const_8h_a0240ac851181b84ac374872dc5434ee4}{N}\mbox{]}\mbox{[}\hyperlink{const_8h_a52037c938e3c1b126c6277da5ca689d0}{M}\mbox{]}, \hyperlink{structLabyrinthe}{Labyrinthe} labyrinthe)
+\begin{DoxyCompactList}\small\item\em Permet de gerer le mouvement du personnage dans une salle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{perso_8h_a212450fae2de205e2a897ca2464c1111}\label{perso_8h_a212450fae2de205e2a897ca2464c1111}} 
+void \hyperlink{perso_8h_a212450fae2de205e2a897ca2464c1111}{Afficher\+Player\+Salle} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, int x, int y)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher la joueur dans la salle à la position x -\/ y. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{perso_8h_afc7e3688b189f1f67327fba44adf45a5}\label{perso_8h_afc7e3688b189f1f67327fba44adf45a5}} 
+void \hyperlink{perso_8h_afc7e3688b189f1f67327fba44adf45a5}{Afficher\+Player\+Minimap} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, int x, int y, int px, int py)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher la joueur sur la minimap à la position x -\/ y. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{perso_8h_aa9e434f255e959b18f6ae19c094cfc3a}\label{perso_8h_aa9e434f255e959b18f6ae19c094cfc3a}} 
+void \hyperlink{perso_8h_aa9e434f255e959b18f6ae19c094cfc3a}{Afficher\+H\+UD} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, \hyperlink{structSalle}{Salle} salle\mbox{[}\hyperlink{const_8h_a0240ac851181b84ac374872dc5434ee4}{N}\mbox{]}\mbox{[}\hyperlink{const_8h_a52037c938e3c1b126c6277da5ca689d0}{M}\mbox{]}, \hyperlink{structPlayer}{Player} player)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher l\textquotesingle{}H\+UD (Head Up Display). Ceci permet au joueur d\textquotesingle{}avoir les informations les plus utiles à porter de main (comme par exemple sa barre de vie) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{perso_8h_a4311c4be1054db16b5e9702600aaaab6}\label{perso_8h_a4311c4be1054db16b5e9702600aaaab6}} 
+void \hyperlink{perso_8h_a4311c4be1054db16b5e9702600aaaab6}{Passage\+Porte} (\hyperlink{structSalle}{Salle} salle\mbox{[}\hyperlink{const_8h_a0240ac851181b84ac374872dc5434ee4}{N}\mbox{]}\mbox{[}\hyperlink{const_8h_a52037c938e3c1b126c6277da5ca689d0}{M}\mbox{]}, int $\ast$salleX, int $\ast$salleY, int $\ast$playerX, int $\ast$playerY)
+\begin{DoxyCompactList}\small\item\em Fonction permettant à un joueur de passer d\textquotesingle{}une salle a une autre. Permet également de mettre à jour la minimap en ajoutant la salle comme explorer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{perso_8h_a23d1332443f1f4eed5ec619be5ecf4bb}\label{perso_8h_a23d1332443f1f4eed5ec619be5ecf4bb}} 
+int \hyperlink{perso_8h_a23d1332443f1f4eed5ec619be5ecf4bb}{Collision\+Mob} (int pX, int pY, int mX, int mY, int m\+TailleX, int m\+TailleY)
+\begin{DoxyCompactList}\small\item\em Permet de savoir si un joueur rentre en collision avec un mob. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{perso_8h_a9f99d226acff187b52b53756606e0d52}\label{perso_8h_a9f99d226acff187b52b53756606e0d52}} 
+void \hyperlink{perso_8h_a9f99d226acff187b52b53756606e0d52}{Afficher\+Inventaire} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, \hyperlink{const_8h_a3eb470313bbbc3a8c713e8f40336e254}{Inventaire} inventaire, T\+T\+F\+\_\+\+Font $\ast$police)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher l\textquotesingle{}inventaire du joueur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fichier contenant des fonctions nous permettant de gérer la création, la modification et l\textquotesingle{}affichage du joueur. 
+
+\begin{DoxyAuthor}{Auteur}
+H\+E\+N\+RY Allan, S\+T\+ER Maxime, G\+A\+I\+S\+NE Maxime, Z\+H\+E\+NG Haoran 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+04/02/2020 
+\end{DoxyDate}

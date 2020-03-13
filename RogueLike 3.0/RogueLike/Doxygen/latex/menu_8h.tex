@@ -1,0 +1,139 @@
+\hypertarget{menu_8h}{}\section{Référence du fichier src/menu.h}
+\label{menu_8h}\index{src/menu.\+h@{src/menu.\+h}}
+
+
+Fichier contenant le prototype des fonctions nous permettant de gérer la création et l\textquotesingle{}affichage des différents menus ainsi que les constantes lié aux menus.  
+
+
+{\ttfamily \#include \char`\"{}const.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+Graphe des dépendances par inclusion de menu.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{menu_8h_a97e9ff874fefaaf64c62416beeedfa8f}\label{menu_8h_a97e9ff874fefaaf64c62416beeedfa8f}} 
+\#define \hyperlink{menu_8h_a97e9ff874fefaaf64c62416beeedfa8f}{N\+B\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+M\+E\+N\+U\+\_\+\+P\+R\+I\+N\+C\+I\+P\+AL}~3
+\begin{DoxyCompactList}\small\item\em Nous permet de savoir le nombre de bouton présent sur le menu principal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8h_a60404ed76dd3db9d614417e47a300d01}\label{menu_8h_a60404ed76dd3db9d614417e47a300d01}} 
+\#define \hyperlink{menu_8h_a60404ed76dd3db9d614417e47a300d01}{T\+A\+I\+L\+L\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+M\+E\+N\+U\+\_\+\+P\+R\+I\+N\+C\+I\+P\+A\+L\+\_\+X}~600
+\begin{DoxyCompactList}\small\item\em Nous permet de savoir la taille d\textquotesingle{}un bouton horizontalement sur le menu principal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8h_a3350c9475c4c3610c479ed6ed53cae2f}\label{menu_8h_a3350c9475c4c3610c479ed6ed53cae2f}} 
+\#define \hyperlink{menu_8h_a3350c9475c4c3610c479ed6ed53cae2f}{T\+A\+I\+L\+L\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+M\+E\+N\+U\+\_\+\+P\+R\+I\+N\+C\+I\+P\+A\+L\+\_\+Y}~100
+\begin{DoxyCompactList}\small\item\em Nous permet de savoir la taille d\textquotesingle{}un bouton verticalement sur le menu principal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8h_a81216dfdf8f91c2554586e7a1064870e}\label{menu_8h_a81216dfdf8f91c2554586e7a1064870e}} 
+\#define \hyperlink{menu_8h_a81216dfdf8f91c2554586e7a1064870e}{N\+B\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+M\+E\+N\+U\+\_\+\+IG}~3
+\begin{DoxyCompactList}\small\item\em Nous permet de savoir le nombre de bouton présent sur le menu en jeu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8h_aa8c419cb9fed1f672b8099f1b7b81d10}\label{menu_8h_aa8c419cb9fed1f672b8099f1b7b81d10}} 
+\#define \hyperlink{menu_8h_aa8c419cb9fed1f672b8099f1b7b81d10}{T\+A\+I\+L\+L\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+M\+E\+N\+U\+\_\+\+I\+G\+\_\+X}~450
+\begin{DoxyCompactList}\small\item\em Nous permet de savoir la taille d\textquotesingle{}un bouton horizontalement sur le menu principal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8h_acca2dd0710fec7516e357cd2adb7e0c3}\label{menu_8h_acca2dd0710fec7516e357cd2adb7e0c3}} 
+\#define \hyperlink{menu_8h_acca2dd0710fec7516e357cd2adb7e0c3}{T\+A\+I\+L\+L\+E\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+\+M\+E\+N\+U\+\_\+\+I\+G\+\_\+Y}~100
+\begin{DoxyCompactList}\small\item\em Nous permet de savoir la taille d\textquotesingle{}un bouton verticalement sur le menu en jeu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{menu_8h_af3d52afbb0d088f62e02208b24a9cbd2}{Menu} \{ \newline
+{\bfseries Aucun}, 
+{\bfseries Principal}, 
+{\bfseries New}, 
+{\bfseries Load}, 
+\newline
+{\bfseries Quit}, 
+{\bfseries Save1}, 
+{\bfseries Save2}, 
+{\bfseries Save3}, 
+\newline
+{\bfseries Setting}, 
+{\bfseries Volume}, 
+{\bfseries Touches}
+ \}
+\item 
+\mbox{\Hypertarget{menu_8h_a52123209430c93ee7e3d66a577daa7f3}\label{menu_8h_a52123209430c93ee7e3d66a577daa7f3}} 
+enum {\bfseries Menu\+IG} \{ \newline
+{\bfseries Premier} = 1, 
+{\bfseries Resume}, 
+{\bfseries Return\+Menu}, 
+{\bfseries Quitter}, 
+\newline
+{\bfseries Sauvegarde}, 
+{\bfseries Sauvegarde1}, 
+{\bfseries Sauvegarde2}, 
+{\bfseries Sauvegarde3}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{menu_8h_a22788e9e61c2236b315adda45a91533b}\label{menu_8h_a22788e9e61c2236b315adda45a91533b}} 
+Menu\+IG {\bfseries choix\+Menu\+IG} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police, Menu\+IG \hyperlink{roguelike_8c_a28ad58afe2d048dbe9f19e8d24a5aa30}{menu\+Actuel})
+\item 
+\mbox{\Hypertarget{menu_8h_a960a3ca8515c944f290a27c17506daef}\label{menu_8h_a960a3ca8515c944f290a27c17506daef}} 
+void {\bfseries Afficher\+Menu\+Volume} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\item 
+void \hyperlink{menu_8h_a5efe712a52021f5d14e906e986a7d20f}{Afficher\+Menu\+IG} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\begin{DoxyCompactList}\small\item\em Affichage du menu In Game. Réalise aussi le traitement du choix du joueur \+: -\/ Resume \+: Reprend la partie -\/ Quit \+: Menu principal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8h_a8c3686f3f6793be58af8d99d1bbe0dfa}\label{menu_8h_a8c3686f3f6793be58af8d99d1bbe0dfa}} 
+void \hyperlink{menu_8h_a8c3686f3f6793be58af8d99d1bbe0dfa}{Afficher\+Menu\+Sauvegarde\+IG} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\begin{DoxyCompactList}\small\item\em Nous permet d\textquotesingle{}afficher le menu de sauvegarde en jeu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8h_a44a64a689a213f32eade2fea614086ef}\label{menu_8h_a44a64a689a213f32eade2fea614086ef}} 
+void \hyperlink{menu_8h_a44a64a689a213f32eade2fea614086ef}{Afficher\+Menu\+Principal} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher le menu Principal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8h_a907f3b3a9c19c955385d032d2fcb16c3}\label{menu_8h_a907f3b3a9c19c955385d032d2fcb16c3}} 
+void \hyperlink{menu_8h_a907f3b3a9c19c955385d032d2fcb16c3}{Afficher\+Menu\+Charger\+Partie} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher le menu Charger Partie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8h_a72920d6821f6e6878d0282777f77b3fb}\label{menu_8h_a72920d6821f6e6878d0282777f77b3fb}} 
+void \hyperlink{menu_8h_a72920d6821f6e6878d0282777f77b3fb}{Afficher\+Menu\+Setting} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher le menu option. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8h_a35b7f6ab5ecd7c1fc1c65a62de60083a}\label{menu_8h_a35b7f6ab5ecd7c1fc1c65a62de60083a}} 
+void {\bfseries Afficher\+Menu\+Touches} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\item 
+\mbox{\Hypertarget{menu_8h_a58016cf4c3fc033f2bec3d49e08a6c74}\label{menu_8h_a58016cf4c3fc033f2bec3d49e08a6c74}} 
+\hyperlink{menu_8h_af3d52afbb0d088f62e02208b24a9cbd2}{Menu} \hyperlink{menu_8h_a58016cf4c3fc033f2bec3d49e08a6c74}{choix\+Menu} (\hyperlink{menu_8h_af3d52afbb0d088f62e02208b24a9cbd2}{Menu} \hyperlink{roguelike_8c_a28ad58afe2d048dbe9f19e8d24a5aa30}{menu\+Actuel})
+\begin{DoxyCompactList}\small\item\em Permet, dans le menu choisi, de séléctionner une intéraction en cliquant sur un des boutons. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fichier contenant le prototype des fonctions nous permettant de gérer la création et l\textquotesingle{}affichage des différents menus ainsi que les constantes lié aux menus. 
+
+\begin{DoxyAuthor}{Auteur}
+H\+E\+N\+RY Allan, S\+T\+ER Maxime, G\+A\+I\+S\+NE Maxime, Z\+H\+E\+NG Haoran 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+04/02/2020 
+\end{DoxyDate}
+
+
+\subsection{Documentation du type de l\textquotesingle{}énumération}
+\mbox{\Hypertarget{menu_8h_af3d52afbb0d088f62e02208b24a9cbd2}\label{menu_8h_af3d52afbb0d088f62e02208b24a9cbd2}} 
+\index{menu.\+h@{menu.\+h}!Menu@{Menu}}
+\index{Menu@{Menu}!menu.\+h@{menu.\+h}}
+\subsubsection{\texorpdfstring{Menu}{Menu}}
+{\footnotesize\ttfamily enum \hyperlink{menu_8h_af3d52afbb0d088f62e02208b24a9cbd2}{Menu}}
+
+Nous permet de savoir dans quel menu nous nous trouvons, pour pouvoir ensuite afficher / gérer en conséquence 
+
+\subsection{Documentation des fonctions}
+\mbox{\Hypertarget{menu_8h_a5efe712a52021f5d14e906e986a7d20f}\label{menu_8h_a5efe712a52021f5d14e906e986a7d20f}} 
+\index{menu.\+h@{menu.\+h}!Afficher\+Menu\+IG@{Afficher\+Menu\+IG}}
+\index{Afficher\+Menu\+IG@{Afficher\+Menu\+IG}!menu.\+h@{menu.\+h}}
+\subsubsection{\texorpdfstring{Afficher\+Menu\+I\+G()}{AfficherMenuIG()}}
+{\footnotesize\ttfamily void Afficher\+Menu\+IG (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{rendu,  }\item[{T\+T\+F\+\_\+\+Font $\ast$}]{police }\end{DoxyParamCaption})}
+
+
+
+Affichage du menu In Game. Réalise aussi le traitement du choix du joueur \+: -\/ Resume \+: Reprend la partie -\/ Quit \+: Menu principal. 
+
+\begin{DoxyReturn}{Renvoie}
+0 si Resume 
+
+1 si Menu Principal 
+
+2 si Quit 
+\end{DoxyReturn}

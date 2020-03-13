@@ -1,0 +1,90 @@
+\hypertarget{const_8c}{}\section{Référence du fichier src/const.c}
+\label{const_8c}\index{src/const.\+c@{src/const.\+c}}
+
+
+Fichier contenant des fonctions qui nous seront utile dans tout les domaines.  
+
+
+{\ttfamily \#include \char`\"{}const.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de const.\+c\+:
+% FIG 0
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{const_8c_af249ba5abdd1c250499a0cf84db60c9b}{valide} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de savoir les coordonnées x et y se trouve bien dans le labyrinthe. \end{DoxyCompactList}\item 
+int \hyperlink{const_8c_ada7e39534a10b8d1531f7c49b00e2cad}{valide\+Salle} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de savoir les coordonnées x et y se trouve bien dans la salle. \end{DoxyCompactList}\item 
+int \hyperlink{const_8c_acb6abaefab30480fb0aa38af7d970971}{verif\+Minimap} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de savoir si les coordonnées x et y se trouve sous la minimap. \end{DoxyCompactList}\item 
+int \hyperlink{const_8c_a7a3cb43db5af19f8d664fd4b39ba1539}{verif\+Health\+Bar} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de savoir si les coordonnées x et y se trouve sous la bar de vie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fichier contenant des fonctions qui nous seront utile dans tout les domaines. 
+
+\begin{DoxyAuthor}{Auteur}
+H\+E\+N\+RY Allan, S\+T\+ER Maxime, G\+A\+I\+S\+NE Maxime, Z\+H\+E\+NG Haoran 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+04/02/2020 
+\end{DoxyDate}
+
+
+\subsection{Documentation des fonctions}
+\mbox{\Hypertarget{const_8c_af249ba5abdd1c250499a0cf84db60c9b}\label{const_8c_af249ba5abdd1c250499a0cf84db60c9b}} 
+\index{const.\+c@{const.\+c}!valide@{valide}}
+\index{valide@{valide}!const.\+c@{const.\+c}}
+\subsubsection{\texorpdfstring{valide()}{valide()}}
+{\footnotesize\ttfamily int valide (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de savoir les coordonnées x et y se trouve bien dans le labyrinthe. 
+
+\begin{DoxyReturn}{Renvoie}
+Vrai ou Faux 
+\end{DoxyReturn}
+\mbox{\Hypertarget{const_8c_ada7e39534a10b8d1531f7c49b00e2cad}\label{const_8c_ada7e39534a10b8d1531f7c49b00e2cad}} 
+\index{const.\+c@{const.\+c}!valide\+Salle@{valide\+Salle}}
+\index{valide\+Salle@{valide\+Salle}!const.\+c@{const.\+c}}
+\subsubsection{\texorpdfstring{valide\+Salle()}{valideSalle()}}
+{\footnotesize\ttfamily int valide\+Salle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de savoir les coordonnées x et y se trouve bien dans la salle. 
+
+\begin{DoxyReturn}{Renvoie}
+Vrai ou Faux 
+\end{DoxyReturn}
+\mbox{\Hypertarget{const_8c_a7a3cb43db5af19f8d664fd4b39ba1539}\label{const_8c_a7a3cb43db5af19f8d664fd4b39ba1539}} 
+\index{const.\+c@{const.\+c}!verif\+Health\+Bar@{verif\+Health\+Bar}}
+\index{verif\+Health\+Bar@{verif\+Health\+Bar}!const.\+c@{const.\+c}}
+\subsubsection{\texorpdfstring{verif\+Health\+Bar()}{verifHealthBar()}}
+{\footnotesize\ttfamily int verif\+Health\+Bar (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de savoir si les coordonnées x et y se trouve sous la bar de vie. 
+
+\begin{DoxyReturn}{Renvoie}
+Vrai ou Faux 
+\end{DoxyReturn}
+\mbox{\Hypertarget{const_8c_acb6abaefab30480fb0aa38af7d970971}\label{const_8c_acb6abaefab30480fb0aa38af7d970971}} 
+\index{const.\+c@{const.\+c}!verif\+Minimap@{verif\+Minimap}}
+\index{verif\+Minimap@{verif\+Minimap}!const.\+c@{const.\+c}}
+\subsubsection{\texorpdfstring{verif\+Minimap()}{verifMinimap()}}
+{\footnotesize\ttfamily int verif\+Minimap (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de savoir si les coordonnées x et y se trouve sous la minimap. 
+
+\begin{DoxyReturn}{Renvoie}
+Vrai ou Faux 
+\end{DoxyReturn}

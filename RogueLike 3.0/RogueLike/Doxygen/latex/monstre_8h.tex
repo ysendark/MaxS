@@ -1,0 +1,45 @@
+\hypertarget{monstre_8h}{}\section{Référence du fichier src/monstre.h}
+\label{monstre_8h}\index{src/monstre.\+h@{src/monstre.\+h}}
+
+
+Fichier contenant le prototype des fonctions nous permettant de gérer les monstres.  
+
+
+{\ttfamily \#include \char`\"{}const.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}perso.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de monstre.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{monstre_8h_a4defd64421c0e5597f51b82b8b9622b3}\label{monstre_8h_a4defd64421c0e5597f51b82b8b9622b3}} 
+void {\bfseries Initialisation\+Boss} (\hyperlink{structSalle}{Salle} $\ast$salle, \hyperlink{structSalle}{Salle} s, \hyperlink{structPlayer}{Player} player)
+\item 
+\mbox{\Hypertarget{monstre_8h_a7d92df5311d809e737bb8ed6b2fec0e5}\label{monstre_8h_a7d92df5311d809e737bb8ed6b2fec0e5}} 
+void {\bfseries Afficher\+Mob} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, \hyperlink{structMonstre}{Monstre} mob)
+\item 
+\mbox{\Hypertarget{monstre_8h_a09d5eeedd74c6ef01da719969cf8ee89}\label{monstre_8h_a09d5eeedd74c6ef01da719969cf8ee89}} 
+void {\bfseries Init\+Mob} (\hyperlink{structMonstre}{Monstre} $\ast$mob, \hyperlink{structSalle}{Salle} salle, \hyperlink{structPlayer}{Player} player, int tailleX, int tailleY, int hp, int max\+Damage, int min\+Damage, int boss)
+\item 
+\mbox{\Hypertarget{monstre_8h_a87e132bdbe44b54ed13cf94a8bf958bc}\label{monstre_8h_a87e132bdbe44b54ed13cf94a8bf958bc}} 
+int {\bfseries Timer\+Mob} (\hyperlink{structMonstre}{Monstre} $\ast$mob)
+\item 
+\mbox{\Hypertarget{monstre_8h_aab86218e63f3c61e5d839e7bd4dce0e3}\label{monstre_8h_aab86218e63f3c61e5d839e7bd4dce0e3}} 
+void {\bfseries Deplacement\+Monstre} (\hyperlink{structMonstre}{Monstre} $\ast$mob, \hyperlink{structPlayer}{Player} player)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fichier contenant le prototype des fonctions nous permettant de gérer les monstres. 
+
+\begin{DoxyAuthor}{Auteur}
+H\+E\+N\+RY Allan, S\+T\+ER Maxime, G\+A\+I\+S\+NE Maxime, Z\+H\+E\+NG Haoran 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+04/02/2020 
+\end{DoxyDate}

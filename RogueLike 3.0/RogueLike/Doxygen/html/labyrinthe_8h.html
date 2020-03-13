@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RogueLike: Référence du fichier src/labyrinthe.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RogueLike
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier labyrinthe.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fichier contenant le prototype des fonctions nous permettant de gérer la création et l'affichage du labyrinthe.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;SDL2/SDL.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="salle_8h_source.html">salle.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="perso_8h_source.html">perso.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="const_8h_source.html">const.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de labyrinthe.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="labyrinthe_8h__incl.png" border="0" usemap="#src_2labyrinthe_8h" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="labyrinthe_8h__dep__incl.png" border="0" usemap="#src_2labyrinthe_8hdep" alt=""/></div>
+<!-- MAP 1 -->
+</div>
+</div>
+<p><a href="labyrinthe_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ac14ccc6ef670ca1d6a386ddbceada2d0"><td class="memItemLeft" align="right" valign="top"><a id="ac14ccc6ef670ca1d6a386ddbceada2d0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinthe_8h.html#ac14ccc6ef670ca1d6a386ddbceada2d0">CheminLePlusLong</a> (<a class="el" href="structLabyrinthe.html">Labyrinthe</a> labyrinthe, int *labX, int *labY)</td></tr>
+<tr class="memdesc:ac14ccc6ef670ca1d6a386ddbceada2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nous permet de savoir quel est la salle la plus éloigner du point de spawn (vas nous servir à savroi dans quel salle faire spawn le boss) <br /></td></tr>
+<tr class="separator:ac14ccc6ef670ca1d6a386ddbceada2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a437daa9a5720a9e2a862ad5840d9e9"><td class="memItemLeft" align="right" valign="top"><a id="a0a437daa9a5720a9e2a862ad5840d9e9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinthe_8h.html#a0a437daa9a5720a9e2a862ad5840d9e9">AfficherMinimap</a> (SDL_Renderer *rendu, <a class="el" href="structSalle.html">Salle</a> salle[<a class="el" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="el" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>], <a class="el" href="structPlayer.html">Player</a> player)</td></tr>
+<tr class="memdesc:a0a437daa9a5720a9e2a862ad5840d9e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'afficher la minimap en prenans en compte les zones visités ou non (pour le brouillard) ainsi que la transparence si le joueur se trouve en dessous. <br /></td></tr>
+<tr class="separator:a0a437daa9a5720a9e2a862ad5840d9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c9950d92ddaf341926e7dfdcf2d44e"><td class="memItemLeft" align="right" valign="top"><a id="ac9c9950d92ddaf341926e7dfdcf2d44e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinthe_8h.html#ac9c9950d92ddaf341926e7dfdcf2d44e">initMat</a> (int mat[<a class="el" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="el" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>])</td></tr>
+<tr class="memdesc:ac9c9950d92ddaf341926e7dfdcf2d44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'initialiser une matrice labyrinthe avec que des murs. <br /></td></tr>
+<tr class="separator:ac9c9950d92ddaf341926e7dfdcf2d44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122026968176fe1d6314c2fe5368f9ad"><td class="memItemLeft" align="right" valign="top"><a id="a122026968176fe1d6314c2fe5368f9ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinthe_8h.html#a122026968176fe1d6314c2fe5368f9ad">initLab</a> (<a class="el" href="structLabyrinthe.html">Labyrinthe</a> *labyrinthe)</td></tr>
+<tr class="memdesc:a122026968176fe1d6314c2fe5368f9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet la génération aléatoire du labyrinthe de taille N*M (défini dans <a class="el" href="const_8h.html" title="Fichier contenant les definitions importantes, les prototypes du .c ainsi les typedef en vu de les ut...">const.h</a>) <br /></td></tr>
+<tr class="separator:a122026968176fe1d6314c2fe5368f9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae80f164177c4a91d43dbe86dec168182"><td class="memItemLeft" align="right" valign="top"><a id="ae80f164177c4a91d43dbe86dec168182"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinthe_8h.html#ae80f164177c4a91d43dbe86dec168182">ChargerLab</a> (<a class="el" href="structLabyrinthe.html">Labyrinthe</a> *labyrinthe)</td></tr>
+<tr class="memdesc:ae80f164177c4a91d43dbe86dec168182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de générer un labyrinthe de taille N*M (defini dans <a class="el" href="const_8h.html" title="Fichier contenant les definitions importantes, les prototypes du .c ainsi les typedef en vu de les ut...">const.h</a>) à l'aide d'un seed. <br /></td></tr>
+<tr class="separator:ae80f164177c4a91d43dbe86dec168182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1632c9a205c9605994d786b4d227d6"><td class="memItemLeft" align="right" valign="top"><a id="a5a1632c9a205c9605994d786b4d227d6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinthe_8h.html#a5a1632c9a205c9605994d786b4d227d6">initPile</a> ()</td></tr>
+<tr class="memdesc:a5a1632c9a205c9605994d786b4d227d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction nous permettant d'initier la pile. <br /></td></tr>
+<tr class="separator:a5a1632c9a205c9605994d786b4d227d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410398477825b2212e1663bb0ed4bba7"><td class="memItemLeft" align="right" valign="top"><a id="a410398477825b2212e1663bb0ed4bba7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinthe_8h.html#a410398477825b2212e1663bb0ed4bba7">empiler</a> (int v)</td></tr>
+<tr class="memdesc:a410398477825b2212e1663bb0ed4bba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction nous permettant d'ajouter un élément à la pile. <br /></td></tr>
+<tr class="separator:a410398477825b2212e1663bb0ed4bba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ab5fc47e5e8cef40e528998d949ca3"><td class="memItemLeft" align="right" valign="top"><a id="a53ab5fc47e5e8cef40e528998d949ca3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinthe_8h.html#a53ab5fc47e5e8cef40e528998d949ca3">depiler</a> (int *v)</td></tr>
+<tr class="memdesc:a53ab5fc47e5e8cef40e528998d949ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction nous permettant d'enlever un élement à la pile. <br /></td></tr>
+<tr class="separator:a53ab5fc47e5e8cef40e528998d949ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7367aae60f9b65ba335852e1236f34e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinthe_8h.html#a7367aae60f9b65ba335852e1236f34e9">pileVide</a> ()</td></tr>
+<tr class="memdesc:a7367aae60f9b65ba335852e1236f34e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction nous permettant de savoir si la pile est vide ou non.  <a href="#a7367aae60f9b65ba335852e1236f34e9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7367aae60f9b65ba335852e1236f34e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aaf50cbb9c664f9d54f9647a832232125"><td class="memItemLeft" align="right" valign="top"><a id="aaf50cbb9c664f9d54f9647a832232125"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinthe_8h.html#aaf50cbb9c664f9d54f9647a832232125">pile</a> [<a class="el" href="const_8h.html#af7a16e2716eaac90fb331c55876cf511">TMAX</a>]</td></tr>
+<tr class="memdesc:aaf50cbb9c664f9d54f9647a832232125"><td class="mdescLeft">&#160;</td><td class="mdescRight">tableau d'entier, nous servant de pile. Sa taille max est défini en constante dans le fichier <a class="el" href="const_8h.html" title="Fichier contenant les definitions importantes, les prototypes du .c ainsi les typedef en vu de les ut...">const.h</a> <br /></td></tr>
+<tr class="separator:aaf50cbb9c664f9d54f9647a832232125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23513cd1b60a5ce42fdddfb249cbde4"><td class="memItemLeft" align="right" valign="top"><a id="ab23513cd1b60a5ce42fdddfb249cbde4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="labyrinthe_8h.html#ab23513cd1b60a5ce42fdddfb249cbde4">sommet</a></td></tr>
+<tr class="memdesc:ab23513cd1b60a5ce42fdddfb249cbde4"><td class="mdescLeft">&#160;</td><td class="mdescRight">entier nous servant à identifier le sommet de la pile <br /></td></tr>
+<tr class="separator:ab23513cd1b60a5ce42fdddfb249cbde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fichier contenant le prototype des fonctions nous permettant de gérer la création et l'affichage du labyrinthe. </p>
+<dl class="section author"><dt>Auteur</dt><dd>HENRY Allan, STER Maxime, GAISNE Maxime, ZHENG Haoran </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>04/02/2020 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a7367aae60f9b65ba335852e1236f34e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7367aae60f9b65ba335852e1236f34e9">&#9670;&nbsp;</a></span>pileVide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pileVide </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction nous permettant de savoir si la pile est vide ou non. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si pile vide, 0 sinon </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

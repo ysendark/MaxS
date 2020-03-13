@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RogueLike:  Fichier source de src/perso.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RogueLike
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">perso.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="perso_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __PERSO__</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __PERSO__</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="salle_8h.html">salle.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="menu_8h.html">menu.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fevent_8h.html">fevent.h</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="labyrinthe_8h.html">labyrinthe.h</a>&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL_ttf.h&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="perso_8h.html#ad2da8ead95f184284e55c1484209c4e7">   20</a></span>&#160;<span class="preprocessor">#define HP_BAR_X 300</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="perso_8h.html#a4c2c915926cb775a76ef8277bc144c46">   22</a></span>&#160;<span class="preprocessor">#define HP_BAR_Y 30</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="perso_8h.html#a54a62144e38aa9ec7b3cd5b06d9dd8a9">   25</a></span>&#160;<span class="preprocessor">#define PLAYER_DEFAULT_DAMAGE 30</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="perso_8h.html#a750cae3714dcd2e1f482b72131cfd9e2">   27</a></span>&#160;<span class="preprocessor">#define PLAYER_DEFAULT_HEALTH 100</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="perso_8h.html#a19caac2706a8623683fc73bd94daa2e7">initPlayer</a>(<a class="code" href="structPlayer.html">Player</a> * player, <span class="keywordtype">int</span> labX, <span class="keywordtype">int</span> labY, <span class="keywordtype">int</span> salleX, <span class="keywordtype">int</span> salleY);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> <a class="code" href="perso_8h.html#a2b821b141a87a6c9dff2dfbcf85ff76f">ActionSalle</a>(<a class="code" href="structInput.html">Input</a> * in, SDL_Renderer * rendu, TTF_Font * police, <a class="code" href="structPlayer.html">Player</a> * player, <a class="code" href="structSalle.html">Salle</a> salle, <span class="keywordtype">int</span> * <a class="code" href="roguelike_8c.html#a2ef448daa64dc4c81936a4836f21776c">inGame</a>, <span class="keywordtype">int</span> * <a class="code" href="roguelike_8c.html#a69d26f73a3a33e36c53e39234b6a4ea4">inMenu</a>, <span class="keywordtype">int</span> * levelActuel, <a class="code" href="menu_8h.html#af3d52afbb0d088f62e02208b24a9cbd2">Menu</a> * <a class="code" href="roguelike_8c.html#a28ad58afe2d048dbe9f19e8d24a5aa30">menuActuel</a>, <a class="code" href="structPlayer.html">Player</a> playerSave, <a class="code" href="structSalle.html">Salle</a> salleSave[<a class="code" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="code" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>], <a class="code" href="structLabyrinthe.html">Labyrinthe</a> labyrinthe);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> <a class="code" href="perso_8h.html#a212450fae2de205e2a897ca2464c1111">AfficherPlayerSalle</a>(SDL_Renderer * rendu, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> <a class="code" href="perso_8h.html#afc7e3688b189f1f67327fba44adf45a5">AfficherPlayerMinimap</a>(SDL_Renderer * rendu, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> px, <span class="keywordtype">int</span> py);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="perso_8h.html#aa9e434f255e959b18f6ae19c094cfc3a">AfficherHUD</a> (SDL_Renderer * rendu, <a class="code" href="structSalle.html">Salle</a> salle[<a class="code" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="code" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>], <a class="code" href="structPlayer.html">Player</a> player);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="perso_8h.html#a4311c4be1054db16b5e9702600aaaab6">PassagePorte</a>(<a class="code" href="structSalle.html">Salle</a> salle[<a class="code" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="code" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>], <span class="keywordtype">int</span> * salleX, <span class="keywordtype">int</span> * salleY, <span class="keywordtype">int</span> * playerX, <span class="keywordtype">int</span> * playerY);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">int</span> <a class="code" href="perso_8h.html#a23d1332443f1f4eed5ec619be5ecf4bb">CollisionMob</a>(<span class="keywordtype">int</span> pX, <span class="keywordtype">int</span> pY, <span class="keywordtype">int</span> mX, <span class="keywordtype">int</span> mY, <span class="keywordtype">int</span> mTailleX, <span class="keywordtype">int</span> mTailleY);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="perso_8h.html#a9f99d226acff187b52b53756606e0d52">AfficherInventaire</a>(SDL_Renderer * rendu, <a class="code" href="structs__inventaire.html">Inventaire</a> inventaire, TTF_Font * police);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="perso_8h_html_a2b821b141a87a6c9dff2dfbcf85ff76f"><div class="ttname"><a href="perso_8h.html#a2b821b141a87a6c9dff2dfbcf85ff76f">ActionSalle</a></div><div class="ttdeci">void ActionSalle(Input *in, SDL_Renderer *rendu, TTF_Font *police, Player *player, Salle salle, int *inGame, int *inMenu, int *levelActuel, Menu *menuActuel, Player playerSave, Salle salleSave[N][M], Labyrinthe labyrinthe)</div><div class="ttdoc">Permet de gerer le mouvement du personnage dans une salle. </div><div class="ttdef"><b>Definition:</b> perso.c:145</div></div>
+<div class="ttc" id="perso_8h_html_a23d1332443f1f4eed5ec619be5ecf4bb"><div class="ttname"><a href="perso_8h.html#a23d1332443f1f4eed5ec619be5ecf4bb">CollisionMob</a></div><div class="ttdeci">int CollisionMob(int pX, int pY, int mX, int mY, int mTailleX, int mTailleY)</div><div class="ttdoc">Permet de savoir si un joueur rentre en collision avec un mob. </div><div class="ttdef"><b>Definition:</b> perso.c:497</div></div>
+<div class="ttc" id="salle_8h_html"><div class="ttname"><a href="salle_8h.html">salle.h</a></div><div class="ttdoc">Fichier contenant les prototypes des fonctions nous permettant de gérer la création et l&amp;#39;affichage de...</div></div>
+<div class="ttc" id="roguelike_8c_html_a28ad58afe2d048dbe9f19e8d24a5aa30"><div class="ttname"><a href="roguelike_8c.html#a28ad58afe2d048dbe9f19e8d24a5aa30">menuActuel</a></div><div class="ttdeci">Menu menuActuel</div><div class="ttdoc">Permet de savoir dans quel menu le joueur se trouve (si il est dans un menu) </div><div class="ttdef"><b>Definition:</b> roguelike.c:23</div></div>
+<div class="ttc" id="const_8h_html_a0240ac851181b84ac374872dc5434ee4"><div class="ttname"><a href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a></div><div class="ttdeci">#define N</div><div class="ttdoc">Permet de definir la taille du labyrinthe en Y. </div><div class="ttdef"><b>Definition:</b> const.h:26</div></div>
+<div class="ttc" id="structInput_html"><div class="ttname"><a href="structInput.html">Input</a></div><div class="ttdoc">Permet d&amp;#39;avoir toutes les informations sur les touches utilisé par le joueur. Enregistre aussi le fai...</div><div class="ttdef"><b>Definition:</b> fevent.h:19</div></div>
+<div class="ttc" id="structPlayer_html"><div class="ttname"><a href="structPlayer.html">Player</a></div><div class="ttdoc">Permet d&amp;#39;avoir toutes les informations sur un joueur dans une même structure. </div><div class="ttdef"><b>Definition:</b> const.h:193</div></div>
+<div class="ttc" id="labyrinthe_8h_html"><div class="ttname"><a href="labyrinthe_8h.html">labyrinthe.h</a></div><div class="ttdoc">Fichier contenant le prototype des fonctions nous permettant de gérer la création et l&amp;#39;affichage du l...</div></div>
+<div class="ttc" id="structs__inventaire_html"><div class="ttname"><a href="structs__inventaire.html">s_inventaire</a></div><div class="ttdoc">Permet d&amp;#39;avoir toute les informations sur l&amp;#39;inventaire du joueur dans une meme structure. </div><div class="ttdef"><b>Definition:</b> const.h:157</div></div>
+<div class="ttc" id="perso_8h_html_a9f99d226acff187b52b53756606e0d52"><div class="ttname"><a href="perso_8h.html#a9f99d226acff187b52b53756606e0d52">AfficherInventaire</a></div><div class="ttdeci">void AfficherInventaire(SDL_Renderer *rendu, Inventaire inventaire, TTF_Font *police)</div><div class="ttdoc">Permet d&amp;#39;afficher l&amp;#39;inventaire du joueur. </div><div class="ttdef"><b>Definition:</b> perso.c:103</div></div>
+<div class="ttc" id="fevent_8h_html"><div class="ttname"><a href="fevent_8h.html">fevent.h</a></div><div class="ttdoc">Fichier contenant la structure input, ainsi que les prototypes des fonctions nous permettant de gérer...</div></div>
+<div class="ttc" id="perso_8h_html_aa9e434f255e959b18f6ae19c094cfc3a"><div class="ttname"><a href="perso_8h.html#aa9e434f255e959b18f6ae19c094cfc3a">AfficherHUD</a></div><div class="ttdeci">void AfficherHUD(SDL_Renderer *rendu, Salle salle[N][M], Player player)</div><div class="ttdoc">Permet d&amp;#39;afficher l&amp;#39;HUD (Head Up Display). Ceci permet au joueur d&amp;#39;avoir les informations les plus ut...</div><div class="ttdef"><b>Definition:</b> perso.c:402</div></div>
+<div class="ttc" id="structLabyrinthe_html"><div class="ttname"><a href="structLabyrinthe.html">Labyrinthe</a></div><div class="ttdoc">Permet d&amp;#39;avoir toutes les informations sur le labyrinthe dans une même structure. ...</div><div class="ttdef"><b>Definition:</b> const.h:220</div></div>
+<div class="ttc" id="roguelike_8c_html_a69d26f73a3a33e36c53e39234b6a4ea4"><div class="ttname"><a href="roguelike_8c.html#a69d26f73a3a33e36c53e39234b6a4ea4">inMenu</a></div><div class="ttdeci">int inMenu</div><div class="ttdoc">Permet de savoir si le joueur est en partie ou non. </div><div class="ttdef"><b>Definition:</b> roguelike.c:20</div></div>
+<div class="ttc" id="menu_8h_html"><div class="ttname"><a href="menu_8h.html">menu.h</a></div><div class="ttdoc">Fichier contenant le prototype des fonctions nous permettant de gérer la création et l&amp;#39;affichage des ...</div></div>
+<div class="ttc" id="perso_8h_html_a19caac2706a8623683fc73bd94daa2e7"><div class="ttname"><a href="perso_8h.html#a19caac2706a8623683fc73bd94daa2e7">initPlayer</a></div><div class="ttdeci">void initPlayer(Player *player, int labX, int labY, int salleX, int salleY)</div><div class="ttdoc">Permet d&amp;#39;initialiser une structure player. </div><div class="ttdef"><b>Definition:</b> perso.c:476</div></div>
+<div class="ttc" id="roguelike_8c_html_a2ef448daa64dc4c81936a4836f21776c"><div class="ttname"><a href="roguelike_8c.html#a2ef448daa64dc4c81936a4836f21776c">inGame</a></div><div class="ttdeci">int inGame</div><div class="ttdoc">Permet de savoir si le joueur est dans un menu ou non. </div><div class="ttdef"><b>Definition:</b> roguelike.c:18</div></div>
+<div class="ttc" id="perso_8h_html_afc7e3688b189f1f67327fba44adf45a5"><div class="ttname"><a href="perso_8h.html#afc7e3688b189f1f67327fba44adf45a5">AfficherPlayerMinimap</a></div><div class="ttdeci">void AfficherPlayerMinimap(SDL_Renderer *rendu, int x, int y, int px, int py)</div><div class="ttdoc">Permet d&amp;#39;afficher la joueur sur la minimap à la position x - y. </div><div class="ttdef"><b>Definition:</b> perso.c:296</div></div>
+<div class="ttc" id="structSalle_html"><div class="ttname"><a href="structSalle.html">Salle</a></div><div class="ttdoc">Permet d&amp;#39;identifié les salles indépendament des autres et d&amp;#39;y avoir toutes les informations nécessair...</div><div class="ttdef"><b>Definition:</b> const.h:167</div></div>
+<div class="ttc" id="perso_8h_html_a4311c4be1054db16b5e9702600aaaab6"><div class="ttname"><a href="perso_8h.html#a4311c4be1054db16b5e9702600aaaab6">PassagePorte</a></div><div class="ttdeci">void PassagePorte(Salle salle[N][M], int *salleX, int *salleY, int *playerX, int *playerY)</div><div class="ttdoc">Fonction permettant à un joueur de passer d&amp;#39;une salle a une autre. Permet également de mettre à jour ...</div><div class="ttdef"><b>Definition:</b> perso.c:329</div></div>
+<div class="ttc" id="perso_8h_html_a212450fae2de205e2a897ca2464c1111"><div class="ttname"><a href="perso_8h.html#a212450fae2de205e2a897ca2464c1111">AfficherPlayerSalle</a></div><div class="ttdeci">void AfficherPlayerSalle(SDL_Renderer *rendu, int x, int y)</div><div class="ttdoc">Permet d&amp;#39;afficher la joueur dans la salle à la position x - y. </div><div class="ttdef"><b>Definition:</b> perso.c:317</div></div>
+<div class="ttc" id="menu_8h_html_af3d52afbb0d088f62e02208b24a9cbd2"><div class="ttname"><a href="menu_8h.html#af3d52afbb0d088f62e02208b24a9cbd2">Menu</a></div><div class="ttdeci">Menu</div><div class="ttdef"><b>Definition:</b> menu.h:33</div></div>
+<div class="ttc" id="const_8h_html_a52037c938e3c1b126c6277da5ca689d0"><div class="ttname"><a href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a></div><div class="ttdeci">#define M</div><div class="ttdoc">Permet de definir la taille du labyrinthe en X. </div><div class="ttdef"><b>Definition:</b> const.h:28</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

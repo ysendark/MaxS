@@ -1,0 +1,61 @@
+\hypertarget{monstre_8c}{}\section{Référence du fichier src/monstre.c}
+\label{monstre_8c}\index{src/monstre.\+c@{src/monstre.\+c}}
+
+
+Fichier contenant des fonctions nous permettant de gérer les monstres.  
+
+
+{\ttfamily \#include \char`\"{}monstre.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sys/timeb.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Graphe des dépendances par inclusion de monstre.\+c\+:
+% FIG 0
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{monstre_8c_a4defd64421c0e5597f51b82b8b9622b3}\label{monstre_8c_a4defd64421c0e5597f51b82b8b9622b3}} 
+void {\bfseries Initialisation\+Boss} (\hyperlink{structSalle}{Salle} $\ast$salle, \hyperlink{structSalle}{Salle} s, \hyperlink{structPlayer}{Player} player)
+\item 
+\mbox{\Hypertarget{monstre_8c_a7d92df5311d809e737bb8ed6b2fec0e5}\label{monstre_8c_a7d92df5311d809e737bb8ed6b2fec0e5}} 
+void {\bfseries Afficher\+Mob} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, \hyperlink{structMonstre}{Monstre} mob)
+\item 
+\mbox{\Hypertarget{monstre_8c_aad1f1780bc178579f56112a1e931056d}\label{monstre_8c_aad1f1780bc178579f56112a1e931056d}} 
+int {\bfseries Init\+Position\+Mob} (\hyperlink{structMonstre}{Monstre} $\ast$mob, \hyperlink{structSalle}{Salle} salle)
+\item 
+\mbox{\Hypertarget{monstre_8c_a09d5eeedd74c6ef01da719969cf8ee89}\label{monstre_8c_a09d5eeedd74c6ef01da719969cf8ee89}} 
+void {\bfseries Init\+Mob} (\hyperlink{structMonstre}{Monstre} $\ast$mob, \hyperlink{structSalle}{Salle} salle, \hyperlink{structPlayer}{Player} player, int tailleX, int tailleY, int hp, int max\+Damage, int min\+Damage, int boss)
+\item 
+\mbox{\Hypertarget{monstre_8c_a87e132bdbe44b54ed13cf94a8bf958bc}\label{monstre_8c_a87e132bdbe44b54ed13cf94a8bf958bc}} 
+int {\bfseries Timer\+Mob} (\hyperlink{structMonstre}{Monstre} $\ast$mob)
+\item 
+\mbox{\Hypertarget{monstre_8c_aab86218e63f3c61e5d839e7bd4dce0e3}\label{monstre_8c_aab86218e63f3c61e5d839e7bd4dce0e3}} 
+void {\bfseries Deplacement\+Monstre} (\hyperlink{structMonstre}{Monstre} $\ast$mob, \hyperlink{structPlayer}{Player} player)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{monstre_8c_a0471ac3f39319fc6db7261c1818512a3}\label{monstre_8c_a0471ac3f39319fc6db7261c1818512a3}} 
+int {\bfseries erreur} = 0
+\item 
+\mbox{\Hypertarget{monstre_8c_ac6ce20c5e793a74bbc9ddcf380200e4f}\label{monstre_8c_ac6ce20c5e793a74bbc9ddcf380200e4f}} 
+int {\bfseries xincr}
+\item 
+\mbox{\Hypertarget{monstre_8c_a1e6f204c4f5b0a44a5cbc79a8c04198b}\label{monstre_8c_a1e6f204c4f5b0a44a5cbc79a8c04198b}} 
+int {\bfseries yincr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fichier contenant des fonctions nous permettant de gérer les monstres. 
+
+\begin{DoxyAuthor}{Auteur}
+H\+E\+N\+RY Allan, S\+T\+ER Maxime, G\+A\+I\+S\+NE Maxime, Z\+H\+E\+NG Haoran 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+04/02/2020 
+\end{DoxyDate}

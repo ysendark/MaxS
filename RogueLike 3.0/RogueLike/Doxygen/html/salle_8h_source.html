@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RogueLike:  Fichier source de src/salle.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RogueLike
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">salle.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="salle_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __SALLE__</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __SALLE__</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL_image.h&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="const_8h.html">const.h</a>&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="perso_8h.html">perso.h</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="salle_8h.html#a17a8740b73b4a45122ba6f57c302a8e0">AfficherSalle</a>(SDL_Renderer * rendu, <a class="code" href="structSalle.html">Salle</a> salle, <a class="code" href="structPlayer.html">Player</a> player, <span class="keywordtype">int</span> levelActuel);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="salle_8h.html#a3c572b16fd87b679844e04e120f2c0f4">initSalle</a>(<a class="code" href="structSalle.html">Salle</a> salle[<a class="code" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="code" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>], <span class="keywordtype">int</span> mat[<a class="code" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][M], <a class="code" href="structPlayer.html">Player</a> player);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="perso_8h_html"><div class="ttname"><a href="perso_8h.html">perso.h</a></div><div class="ttdoc">Fichier contenant des fonctions nous permettant de gérer la création, la modification et l&amp;#39;affichage ...</div></div>
+<div class="ttc" id="salle_8h_html_a3c572b16fd87b679844e04e120f2c0f4"><div class="ttname"><a href="salle_8h.html#a3c572b16fd87b679844e04e120f2c0f4">initSalle</a></div><div class="ttdeci">void initSalle(Salle salle[N][M], int mat[N][M], Player player)</div><div class="ttdoc">Permet d&amp;#39;initialiser la matrice de type Salle. Si le lieu est un couloir : On vas enregister où se tr...</div><div class="ttdef"><b>Definition:</b> salle.c:17</div></div>
+<div class="ttc" id="const_8h_html_a0240ac851181b84ac374872dc5434ee4"><div class="ttname"><a href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a></div><div class="ttdeci">#define N</div><div class="ttdoc">Permet de definir la taille du labyrinthe en Y. </div><div class="ttdef"><b>Definition:</b> const.h:26</div></div>
+<div class="ttc" id="structPlayer_html"><div class="ttname"><a href="structPlayer.html">Player</a></div><div class="ttdoc">Permet d&amp;#39;avoir toutes les informations sur un joueur dans une même structure. </div><div class="ttdef"><b>Definition:</b> const.h:193</div></div>
+<div class="ttc" id="salle_8h_html_a17a8740b73b4a45122ba6f57c302a8e0"><div class="ttname"><a href="salle_8h.html#a17a8740b73b4a45122ba6f57c302a8e0">AfficherSalle</a></div><div class="ttdeci">void AfficherSalle(SDL_Renderer *rendu, Salle salle, Player player, int levelActuel)</div><div class="ttdoc">Permet d&amp;#39;afficher une salle (Zone principal de l&amp;#39;ecran) </div><div class="ttdef"><b>Definition:</b> salle.c:105</div></div>
+<div class="ttc" id="const_8h_html"><div class="ttname"><a href="const_8h.html">const.h</a></div><div class="ttdoc">Fichier contenant les definitions importantes, les prototypes du .c ainsi les typedef en vu de les ut...</div></div>
+<div class="ttc" id="structSalle_html"><div class="ttname"><a href="structSalle.html">Salle</a></div><div class="ttdoc">Permet d&amp;#39;identifié les salles indépendament des autres et d&amp;#39;y avoir toutes les informations nécessair...</div><div class="ttdef"><b>Definition:</b> const.h:167</div></div>
+<div class="ttc" id="const_8h_html_a52037c938e3c1b126c6277da5ca689d0"><div class="ttname"><a href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a></div><div class="ttdeci">#define M</div><div class="ttdoc">Permet de definir la taille du labyrinthe en X. </div><div class="ttdef"><b>Definition:</b> const.h:28</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

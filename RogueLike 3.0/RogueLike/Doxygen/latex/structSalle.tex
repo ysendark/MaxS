@@ -1,0 +1,59 @@
+\hypertarget{structSalle}{}\section{Référence de la structure Salle}
+\label{structSalle}\index{Salle@{Salle}}
+
+
+Permet d\textquotesingle{}identifié les salles indépendament des autres et d\textquotesingle{}y avoir toutes les informations nécessaire indépendamment chacune.  
+
+
+
+
+{\ttfamily \#include $<$const.\+h$>$}
+
+
+
+Graphe de collaboration de Salle\+:
+% FIG 0
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structSalle_aa89ea230128f1edda9a1219cde40c861}\label{structSalle_aa89ea230128f1edda9a1219cde40c861}} 
+int \hyperlink{structSalle_aa89ea230128f1edda9a1219cde40c861}{ouest}
+\begin{DoxyCompactList}\small\item\em Sert à indiquer si une porte est présente à l\textquotesingle{}ouest ou non. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structSalle_afe3e4107ac72d3cdf7daa4a4253082e3}\label{structSalle_afe3e4107ac72d3cdf7daa4a4253082e3}} 
+int \hyperlink{structSalle_afe3e4107ac72d3cdf7daa4a4253082e3}{sud}
+\begin{DoxyCompactList}\small\item\em Sert à indiquer si une porte est présente au sud ou non. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structSalle_ad08cd27234ab13a083254eec5e4652e8}\label{structSalle_ad08cd27234ab13a083254eec5e4652e8}} 
+int \hyperlink{structSalle_ad08cd27234ab13a083254eec5e4652e8}{nord}
+\begin{DoxyCompactList}\small\item\em Sert à indiquer si une porte est présente au nord ou non. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structSalle_a9cc386310fabc3fc57ffd87897445b9b}\label{structSalle_a9cc386310fabc3fc57ffd87897445b9b}} 
+int \hyperlink{structSalle_a9cc386310fabc3fc57ffd87897445b9b}{est}
+\begin{DoxyCompactList}\small\item\em Sert à indiquer si une porte est présente à l\textquotesingle{}est ou non. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structSalle_adc0c81ed52bd8e863da1a6a10d066904}\label{structSalle_adc0c81ed52bd8e863da1a6a10d066904}} 
+int \hyperlink{structSalle_adc0c81ed52bd8e863da1a6a10d066904}{nb\+Porte}
+\begin{DoxyCompactList}\small\item\em Permet de savoir le nombre de porte que contient une salle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structSalle_aba0461bd2cd9b0708ab85bd94d1f2e8a}\label{structSalle_aba0461bd2cd9b0708ab85bd94d1f2e8a}} 
+int \hyperlink{structSalle_aba0461bd2cd9b0708ab85bd94d1f2e8a}{explorer}
+\begin{DoxyCompactList}\small\item\em Permet de savoir si la salle a déja était visiter ou non. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structSalle_a39411f4fb042ded509925b37f1e73310}\label{structSalle_a39411f4fb042ded509925b37f1e73310}} 
+\hyperlink{structMap}{Map} \hyperlink{structSalle_a39411f4fb042ded509925b37f1e73310}{mat\+Texture} \mbox{[}\hyperlink{const_8h_aef95feca591fc0fcfffb4eb5c46ffbf7}{T\+A\+I\+L\+L\+E\+\_\+\+S\+A\+L\+L\+E\+\_\+Y}\mbox{]}\mbox{[}\hyperlink{const_8h_a608fae13cb35fc3e5844976e383e885a}{T\+A\+I\+L\+L\+E\+\_\+\+S\+A\+L\+L\+E\+\_\+X}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Matrice nous permettant de savoir quelle texture appliqué à l\textquotesingle{}écran. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structSalle_ad55bad75a3143d4d866a7bbf20c887a6}\label{structSalle_ad55bad75a3143d4d866a7bbf20c887a6}} 
+int \hyperlink{structSalle_ad55bad75a3143d4d866a7bbf20c887a6}{nb\+Monstres}
+\begin{DoxyCompactList}\small\item\em Indique le nombre de monstre present dans la salle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structSalle_a0954d981fd9f1bac25b6fabc47f3c2e6}\label{structSalle_a0954d981fd9f1bac25b6fabc47f3c2e6}} 
+\hyperlink{structMonstre}{Monstre} \hyperlink{structSalle_a0954d981fd9f1bac25b6fabc47f3c2e6}{monstre} \mbox{[}\hyperlink{const_8h_ae60dc3a7e8d19e739f573139251ae66b}{M\+A\+X\+\_\+\+M\+O\+N\+S\+T\+RE}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}enregistrer les monstres present dans la salle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structSalle_ac79b8b32c357a3ab5734a07ad719bec7}\label{structSalle_ac79b8b32c357a3ab5734a07ad719bec7}} 
+int {\bfseries nb\+Coffre}
+\item 
+\mbox{\Hypertarget{structSalle_af9cf42b22690812837cc72b577a0b8ce}\label{structSalle_af9cf42b22690812837cc72b577a0b8ce}} 
+\hyperlink{const_8h_a25379db459b7480dd1fee01a3075f324}{Coffre} {\bfseries coffre} \mbox{[}\hyperlink{const_8h_a96c66a1f761bbc8a0ac6794f75cf1d5e}{M\+A\+X\+\_\+\+C\+O\+F\+F\+RE}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Permet d\textquotesingle{}identifié les salles indépendament des autres et d\textquotesingle{}y avoir toutes les informations nécessaire indépendamment chacune. 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{const_8h}{const.\+h}\end{DoxyCompactItemize}

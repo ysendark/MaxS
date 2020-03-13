@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RogueLike: Référence du fichier src/const.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RogueLike
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier const.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fichier contenant les definitions importantes, les prototypes du .c ainsi les typedef en vu de les utiliser en tout instantdes fonctions nous permettant de gérer la création et l'affichage du labyrinthe.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;SDL2/SDL.h&gt;</code><br />
+<code>#include &lt;SDL2/SDL_ttf.h&gt;</code><br />
+<code>#include &lt;SDL2/SDL_image.h&gt;</code><br />
+<code>#include &lt;SDL2/SDL_mixer.h&gt;</code><br />
+<code>#include &quot;sys/timeb.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de const.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="const_8h__incl.png" border="0" usemap="#src_2const_8h" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="const_8h__dep__incl.png" border="0" usemap="#src_2const_8hdep" alt=""/></div>
+<!-- MAP 1 -->
+</div>
+</div>
+<p><a href="const_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMap.html">Map</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'identifié les textures à appliqué dans une salle, et de savoir si celle ci sont considéré comme des murs ou non.  <a href="structMap.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMonstre.html">Monstre</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'avoir toutes les informations sur un mob dans une même structure.  <a href="structMonstre.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__objet.html">s_objet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'avoir toute les informations sur un objet dans une meme structure.  <a href="structs__objet.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__coffre.html">s_coffre</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'avoir toute les informations sur un coffre dans une meme structure.  <a href="structs__coffre.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs__inventaire.html">s_inventaire</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'avoir toute les informations sur l'inventaire du joueur dans une meme structure.  <a href="structs__inventaire.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSalle.html">Salle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'identifié les salles indépendament des autres et d'y avoir toutes les informations nécessaire indépendamment chacune.  <a href="structSalle.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPlayer.html">Player</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'avoir toutes les informations sur un joueur dans une même structure.  <a href="structPlayer.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLabyrinthe.html">Labyrinthe</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'avoir toutes les informations sur le labyrinthe dans une même structure.  <a href="structLabyrinthe.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aab74b6461d42be63f5a022a6fe56e5c5"><td class="memItemLeft" align="right" valign="top"><a id="aab74b6461d42be63f5a022a6fe56e5c5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GOD_MOD</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aab74b6461d42be63f5a022a6fe56e5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0240ac851181b84ac374872dc5434ee4"><td class="memItemLeft" align="right" valign="top"><a id="a0240ac851181b84ac374872dc5434ee4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memdesc:a0240ac851181b84ac374872dc5434ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de definir la taille du labyrinthe en Y. <br /></td></tr>
+<tr class="separator:a0240ac851181b84ac374872dc5434ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52037c938e3c1b126c6277da5ca689d0"><td class="memItemLeft" align="right" valign="top"><a id="a52037c938e3c1b126c6277da5ca689d0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memdesc:a52037c938e3c1b126c6277da5ca689d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de definir la taille du labyrinthe en X. <br /></td></tr>
+<tr class="separator:a52037c938e3c1b126c6277da5ca689d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a608fae13cb35fc3e5844976e383e885a"><td class="memItemLeft" align="right" valign="top"><a id="a608fae13cb35fc3e5844976e383e885a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#a608fae13cb35fc3e5844976e383e885a">TAILLE_SALLE_X</a>&#160;&#160;&#160;20</td></tr>
+<tr class="memdesc:a608fae13cb35fc3e5844976e383e885a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de definir la taille des salles en X. <br /></td></tr>
+<tr class="separator:a608fae13cb35fc3e5844976e383e885a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef95feca591fc0fcfffb4eb5c46ffbf7"><td class="memItemLeft" align="right" valign="top"><a id="aef95feca591fc0fcfffb4eb5c46ffbf7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#aef95feca591fc0fcfffb4eb5c46ffbf7">TAILLE_SALLE_Y</a>&#160;&#160;&#160;15</td></tr>
+<tr class="memdesc:aef95feca591fc0fcfffb4eb5c46ffbf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de definir la taille des salles en Y. <br /></td></tr>
+<tr class="separator:aef95feca591fc0fcfffb4eb5c46ffbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c2b2aa23a461a79661060683611305"><td class="memItemLeft" align="right" valign="top"><a id="a22c2b2aa23a461a79661060683611305"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#a22c2b2aa23a461a79661060683611305">TAILLE_TILE</a>&#160;&#160;&#160;50</td></tr>
+<tr class="memdesc:a22c2b2aa23a461a79661060683611305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de definir la taille d'un tile (d'une "case" de la salle) <br /></td></tr>
+<tr class="separator:a22c2b2aa23a461a79661060683611305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5b774340dfc7392d6911f7a2186988c"><td class="memItemLeft" align="right" valign="top"><a id="ae5b774340dfc7392d6911f7a2186988c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#ae5b774340dfc7392d6911f7a2186988c">TAILLE_CASE</a>&#160;&#160;&#160;35</td></tr>
+<tr class="memdesc:ae5b774340dfc7392d6911f7a2186988c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de definir la taille d'une case du labyrinthe. <br /></td></tr>
+<tr class="separator:ae5b774340dfc7392d6911f7a2186988c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4ecbe1e61ce97d6eaf58aa84167079e"><td class="memItemLeft" align="right" valign="top"><a id="ab4ecbe1e61ce97d6eaf58aa84167079e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#ab4ecbe1e61ce97d6eaf58aa84167079e">LARGEUR_MINIMAP</a>&#160;&#160;&#160;<a class="el" href="const_8h.html#ae5b774340dfc7392d6911f7a2186988c">TAILLE_CASE</a>*<a class="el" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a></td></tr>
+<tr class="memdesc:ab4ecbe1e61ce97d6eaf58aa84167079e"><td class="mdescLeft">&#160;</td><td class="mdescRight">On definie la taille de la minimap en largeur avec la taille d'une case de labyrinthe*la taille du labyrinthe en X. <br /></td></tr>
+<tr class="separator:ab4ecbe1e61ce97d6eaf58aa84167079e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad45fe7e6e100bf29a08175d2e916a4e3"><td class="memItemLeft" align="right" valign="top"><a id="ad45fe7e6e100bf29a08175d2e916a4e3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#ad45fe7e6e100bf29a08175d2e916a4e3">HAUTEUR_MINIMAP</a>&#160;&#160;&#160;<a class="el" href="const_8h.html#ae5b774340dfc7392d6911f7a2186988c">TAILLE_CASE</a>*<a class="el" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a></td></tr>
+<tr class="memdesc:ad45fe7e6e100bf29a08175d2e916a4e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">On definie la taille de la minimap en hauteur avec la taille d'une case de labyrinthe*la taille du labyrinthe en Y. <br /></td></tr>
+<tr class="separator:ad45fe7e6e100bf29a08175d2e916a4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586a4c30ccbcbe94b7776a73d0c6fe18"><td class="memItemLeft" align="right" valign="top"><a id="a586a4c30ccbcbe94b7776a73d0c6fe18"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#a586a4c30ccbcbe94b7776a73d0c6fe18">LARGEUR_ECRAN</a>&#160;&#160;&#160;<a class="el" href="const_8h.html#a22c2b2aa23a461a79661060683611305">TAILLE_TILE</a>*<a class="el" href="const_8h.html#a608fae13cb35fc3e5844976e383e885a">TAILLE_SALLE_X</a></td></tr>
+<tr class="memdesc:a586a4c30ccbcbe94b7776a73d0c6fe18"><td class="mdescLeft">&#160;</td><td class="mdescRight">On definie la taille de l'écran en largeur avec la taille de la salle en X * la taille d'un tiles. <br /></td></tr>
+<tr class="separator:a586a4c30ccbcbe94b7776a73d0c6fe18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad86253328fbbbd6eb266efdd6bd2ef09"><td class="memItemLeft" align="right" valign="top"><a id="ad86253328fbbbd6eb266efdd6bd2ef09"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#ad86253328fbbbd6eb266efdd6bd2ef09">HAUTEUR_ECRAN</a>&#160;&#160;&#160;<a class="el" href="const_8h.html#a22c2b2aa23a461a79661060683611305">TAILLE_TILE</a>*<a class="el" href="const_8h.html#aef95feca591fc0fcfffb4eb5c46ffbf7">TAILLE_SALLE_Y</a></td></tr>
+<tr class="memdesc:ad86253328fbbbd6eb266efdd6bd2ef09"><td class="mdescLeft">&#160;</td><td class="mdescRight">On definie la taille de l'écran en hauteur avec la taille de la salle en Y * la taille d'un tiles. <br /></td></tr>
+<tr class="separator:ad86253328fbbbd6eb266efdd6bd2ef09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a16e2716eaac90fb331c55876cf511"><td class="memItemLeft" align="right" valign="top"><a id="af7a16e2716eaac90fb331c55876cf511"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#af7a16e2716eaac90fb331c55876cf511">TMAX</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:af7a16e2716eaac90fb331c55876cf511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Taille max de la pile. <br /></td></tr>
+<tr class="separator:af7a16e2716eaac90fb331c55876cf511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eed82f9b76040ba959053c6b3ae72e4"><td class="memItemLeft" align="right" valign="top"><a id="a0eed82f9b76040ba959053c6b3ae72e4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#a0eed82f9b76040ba959053c6b3ae72e4">COULOIR</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a0eed82f9b76040ba959053c6b3ae72e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constante pour définir un couloir dans le labyrinthe. <br /></td></tr>
+<tr class="separator:a0eed82f9b76040ba959053c6b3ae72e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528503a3fc17d7c9f3ddfb07899db5c2"><td class="memItemLeft" align="right" valign="top"><a id="a528503a3fc17d7c9f3ddfb07899db5c2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#a528503a3fc17d7c9f3ddfb07899db5c2">MUR</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="memdesc:a528503a3fc17d7c9f3ddfb07899db5c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constante pour définir un mur dans le labyrinthe. <br /></td></tr>
+<tr class="separator:a528503a3fc17d7c9f3ddfb07899db5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60dc3a7e8d19e739f573139251ae66b"><td class="memItemLeft" align="right" valign="top"><a id="ae60dc3a7e8d19e739f573139251ae66b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#ae60dc3a7e8d19e739f573139251ae66b">MAX_MONSTRE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:ae60dc3a7e8d19e739f573139251ae66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constante pour definir le nombre max de monstre possible dans une salle. <br /></td></tr>
+<tr class="separator:ae60dc3a7e8d19e739f573139251ae66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac073582df7b933b8ce9c9e414e821a5c"><td class="memItemLeft" align="right" valign="top"><a id="ac073582df7b933b8ce9c9e414e821a5c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#ac073582df7b933b8ce9c9e414e821a5c">MAX_OBJET</a>&#160;&#160;&#160;30</td></tr>
+<tr class="memdesc:ac073582df7b933b8ce9c9e414e821a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constante pour definir le nombre max d'objet. <br /></td></tr>
+<tr class="separator:ac073582df7b933b8ce9c9e414e821a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c66a1f761bbc8a0ac6794f75cf1d5e"><td class="memItemLeft" align="right" valign="top"><a id="a96c66a1f761bbc8a0ac6794f75cf1d5e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#a96c66a1f761bbc8a0ac6794f75cf1d5e">MAX_COFFRE</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:a96c66a1f761bbc8a0ac6794f75cf1d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constante pour definir le nombre max de coffre. <br /></td></tr>
+<tr class="separator:a96c66a1f761bbc8a0ac6794f75cf1d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8afff63861e2077f13e8242825cf2b68"><td class="memItemLeft" align="right" valign="top"><a id="a8afff63861e2077f13e8242825cf2b68"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_LOOT_DAMAGE</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a8afff63861e2077f13e8242825cf2b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd91b3b06cf3f3b649b11ade9ec5e19"><td class="memItemLeft" align="right" valign="top"><a id="acbd91b3b06cf3f3b649b11ade9ec5e19"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_LOOT_DAMAGE</b>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:acbd91b3b06cf3f3b649b11ade9ec5e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8adc927d364de4700d1820b0b353c78a"><td class="memItemLeft" align="right" valign="top"><a id="a8adc927d364de4700d1820b0b353c78a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_LOOT_ARMOR</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a8adc927d364de4700d1820b0b353c78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c96d812b832f4b246c310fac4923b63"><td class="memItemLeft" align="right" valign="top"><a id="a1c96d812b832f4b246c310fac4923b63"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_LOOT_ARMOR</b>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a1c96d812b832f4b246c310fac4923b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4a120539aae047dcf836ff1522cd9d"><td class="memItemLeft" align="right" valign="top"><a id="aab4a120539aae047dcf836ff1522cd9d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_LOOT_DAMAGE_LEGENDARY</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:aab4a120539aae047dcf836ff1522cd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a579a7459c1a079382a56ccbd6206261b"><td class="memItemLeft" align="right" valign="top"><a id="a579a7459c1a079382a56ccbd6206261b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_LOOT_DAMAGE_LEGENDARY</b>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:a579a7459c1a079382a56ccbd6206261b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12a5d41cfd829bc76e533629bb3227c"><td class="memItemLeft" align="right" valign="top"><a id="ae12a5d41cfd829bc76e533629bb3227c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_LOOT_ARMOR_LEGENDARY</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:ae12a5d41cfd829bc76e533629bb3227c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc5d1f3d55af839fd26c6f95f2876ca"><td class="memItemLeft" align="right" valign="top"><a id="aedc5d1f3d55af839fd26c6f95f2876ca"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_LOOT_ARMOR_LEGENDARY</b>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:aedc5d1f3d55af839fd26c6f95f2876ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:abba99f972374fba2fe4484538ae17a05"><td class="memItemLeft" align="right" valign="top"><a id="abba99f972374fba2fe4484538ae17a05"></a>
+typedef struct <a class="el" href="structs__objet.html">s_objet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#abba99f972374fba2fe4484538ae17a05">Objet</a></td></tr>
+<tr class="memdesc:abba99f972374fba2fe4484538ae17a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'avoir toute les informations sur un objet dans une meme structure. <br /></td></tr>
+<tr class="separator:abba99f972374fba2fe4484538ae17a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25379db459b7480dd1fee01a3075f324"><td class="memItemLeft" align="right" valign="top"><a id="a25379db459b7480dd1fee01a3075f324"></a>
+typedef struct <a class="el" href="structs__coffre.html">s_coffre</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#a25379db459b7480dd1fee01a3075f324">Coffre</a></td></tr>
+<tr class="memdesc:a25379db459b7480dd1fee01a3075f324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'avoir toute les informations sur un coffre dans une meme structure. <br /></td></tr>
+<tr class="separator:a25379db459b7480dd1fee01a3075f324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb470313bbbc3a8c713e8f40336e254"><td class="memItemLeft" align="right" valign="top"><a id="a3eb470313bbbc3a8c713e8f40336e254"></a>
+typedef struct <a class="el" href="structs__inventaire.html">s_inventaire</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#a3eb470313bbbc3a8c713e8f40336e254">Inventaire</a></td></tr>
+<tr class="memdesc:a3eb470313bbbc3a8c713e8f40336e254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'avoir toute les informations sur l'inventaire du joueur dans une meme structure. <br /></td></tr>
+<tr class="separator:a3eb470313bbbc3a8c713e8f40336e254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:ab91b34ae619fcdfcba4522b4f335bf83"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#ab91b34ae619fcdfcba4522b4f335bf83">Position</a> { <br />
+&#160;&#160;<a class="el" href="const_8h.html#ab91b34ae619fcdfcba4522b4f335bf83ac9d3e887722f2bc482bcca9d41c512af">None</a>, 
+<a class="el" href="const_8h.html#ab91b34ae619fcdfcba4522b4f335bf83aca11d512a31ff9d5cd1c3cecc5595d2d">Nord</a>, 
+<a class="el" href="const_8h.html#ab91b34ae619fcdfcba4522b4f335bf83acd27941d85bb38a80f6b4606af668b95">Sud</a>, 
+<a class="el" href="const_8h.html#ab91b34ae619fcdfcba4522b4f335bf83a85b2918e55a712eb2ba11b1a0b4b06f0">Est</a>, 
+<br />
+&#160;&#160;<a class="el" href="const_8h.html#ab91b34ae619fcdfcba4522b4f335bf83ad4fc38b8fdd575951487a1bd4aaa7b75">Ouest</a>
+<br />
+ }<tr class="memdesc:ab91b34ae619fcdfcba4522b4f335bf83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'identifier les chemins lors de la génération du labyrinthe.  <a href="const_8h.html#ab91b34ae619fcdfcba4522b4f335bf83">Plus de détails...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ab91b34ae619fcdfcba4522b4f335bf83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:af249ba5abdd1c250499a0cf84db60c9b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#af249ba5abdd1c250499a0cf84db60c9b">valide</a> (int x, int y)</td></tr>
+<tr class="memdesc:af249ba5abdd1c250499a0cf84db60c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de savoir les coordonnées x et y se trouve bien dans le labyrinthe.  <a href="#af249ba5abdd1c250499a0cf84db60c9b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af249ba5abdd1c250499a0cf84db60c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada7e39534a10b8d1531f7c49b00e2cad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#ada7e39534a10b8d1531f7c49b00e2cad">valideSalle</a> (int x, int y)</td></tr>
+<tr class="memdesc:ada7e39534a10b8d1531f7c49b00e2cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de savoir les coordonnées x et y se trouve bien dans la salle.  <a href="#ada7e39534a10b8d1531f7c49b00e2cad">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ada7e39534a10b8d1531f7c49b00e2cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6abaefab30480fb0aa38af7d970971"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#acb6abaefab30480fb0aa38af7d970971">verifMinimap</a> (int x, int y)</td></tr>
+<tr class="memdesc:acb6abaefab30480fb0aa38af7d970971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de savoir si les coordonnées x et y se trouve sous la minimap.  <a href="#acb6abaefab30480fb0aa38af7d970971">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acb6abaefab30480fb0aa38af7d970971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a3cb43db5af19f8d664fd4b39ba1539"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="const_8h.html#a7a3cb43db5af19f8d664fd4b39ba1539">verifHealthBar</a> (int x, int y)</td></tr>
+<tr class="memdesc:a7a3cb43db5af19f8d664fd4b39ba1539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de savoir si les coordonnées x et y se trouve sous la bar de vie.  <a href="#a7a3cb43db5af19f8d664fd4b39ba1539">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7a3cb43db5af19f8d664fd4b39ba1539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a7b61b490f184c0432718ec4ac535e7dc"><td class="memItemLeft" align="right" valign="top"><a id="a7b61b490f184c0432718ec4ac535e7dc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>VOLUME</b></td></tr>
+<tr class="separator:a7b61b490f184c0432718ec4ac535e7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fichier contenant les definitions importantes, les prototypes du .c ainsi les typedef en vu de les utiliser en tout instantdes fonctions nous permettant de gérer la création et l'affichage du labyrinthe. </p>
+<dl class="section author"><dt>Auteur</dt><dd>HENRY Allan, STER Maxime, GAISNE Maxime, ZHENG Haoran </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>04/02/2020 </dd></dl>
+</div><h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="ab91b34ae619fcdfcba4522b4f335bf83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab91b34ae619fcdfcba4522b4f335bf83">&#9670;&nbsp;</a></span>Position</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="const_8h.html#ab91b34ae619fcdfcba4522b4f335bf83">Position</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet d'identifier les chemins lors de la génération du labyrinthe. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="ab91b34ae619fcdfcba4522b4f335bf83ac9d3e887722f2bc482bcca9d41c512af"></a>None&#160;</td><td class="fielddoc"><p>Il n'y a donc aucun couloir possible </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab91b34ae619fcdfcba4522b4f335bf83aca11d512a31ff9d5cd1c3cecc5595d2d"></a>Nord&#160;</td><td class="fielddoc"><p>Il y a un couloir possible au nord </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab91b34ae619fcdfcba4522b4f335bf83acd27941d85bb38a80f6b4606af668b95"></a>Sud&#160;</td><td class="fielddoc"><p>Il y a un couloir possible au sud </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab91b34ae619fcdfcba4522b4f335bf83a85b2918e55a712eb2ba11b1a0b4b06f0"></a>Est&#160;</td><td class="fielddoc"><p>Il y a un couloir possible à l'est </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab91b34ae619fcdfcba4522b4f335bf83ad4fc38b8fdd575951487a1bd4aaa7b75"></a>Ouest&#160;</td><td class="fielddoc"><p>Il y a un couloir possible à l'ouest </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="af249ba5abdd1c250499a0cf84db60c9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af249ba5abdd1c250499a0cf84db60c9b">&#9670;&nbsp;</a></span>valide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int valide </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de savoir les coordonnées x et y se trouve bien dans le labyrinthe. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Vrai ou Faux </dd></dl>
+
+</div>
+</div>
+<a id="ada7e39534a10b8d1531f7c49b00e2cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada7e39534a10b8d1531f7c49b00e2cad">&#9670;&nbsp;</a></span>valideSalle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int valideSalle </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de savoir les coordonnées x et y se trouve bien dans la salle. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Vrai ou Faux </dd></dl>
+
+</div>
+</div>
+<a id="a7a3cb43db5af19f8d664fd4b39ba1539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a3cb43db5af19f8d664fd4b39ba1539">&#9670;&nbsp;</a></span>verifHealthBar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int verifHealthBar </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de savoir si les coordonnées x et y se trouve sous la bar de vie. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Vrai ou Faux </dd></dl>
+
+</div>
+</div>
+<a id="acb6abaefab30480fb0aa38af7d970971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb6abaefab30480fb0aa38af7d970971">&#9670;&nbsp;</a></span>verifMinimap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int verifMinimap </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de savoir si les coordonnées x et y se trouve sous la minimap. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Vrai ou Faux </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

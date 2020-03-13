@@ -1,0 +1,13 @@
+#charset
+playerWalk.png
+9 4
+#sequences
+4 2
+0 1 1
+0 9 75
+9 1 1
+9 9 75
+18 1 1
+18 9 75
+27 1 1
+27 9 75

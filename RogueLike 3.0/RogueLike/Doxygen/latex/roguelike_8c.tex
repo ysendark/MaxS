@@ -1,0 +1,89 @@
+\hypertarget{roguelike_8c}{}\section{Référence du fichier src/roguelike.c}
+\label{roguelike_8c}\index{src/roguelike.\+c@{src/roguelike.\+c}}
+
+
+Fichier contenant la fonction main de notre programme.  
+
+
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}labyrinthe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}saveload.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}perso.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}monstre.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}objet.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}son.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de roguelike.\+c\+:
+% FIG 0
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{roguelike_8c_a76d056f8c55f09f4b33d12a8abd2c529}\label{roguelike_8c_a76d056f8c55f09f4b33d12a8abd2c529}} 
+void {\bfseries Afficher\+F\+PS} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\item 
+\mbox{\Hypertarget{roguelike_8c_a0a07cd0c8859b9c1434b3ce25d978592}\label{roguelike_8c_a0a07cd0c8859b9c1434b3ce25d978592}} 
+void \hyperlink{roguelike_8c_a0a07cd0c8859b9c1434b3ce25d978592}{Mort\+Player} (\hyperlink{structPlayer}{Player} $\ast$player, \hyperlink{structSalle}{Salle} salle\mbox{[}\hyperlink{const_8h_a0240ac851181b84ac374872dc5434ee4}{N}\mbox{]}\mbox{[}\hyperlink{const_8h_a52037c938e3c1b126c6277da5ca689d0}{M}\mbox{]}, \hyperlink{structLabyrinthe}{Labyrinthe} $\ast$labyrinthe)
+\begin{DoxyCompactList}\small\item\em Permet de gerer la mort d\textquotesingle{}un joueur. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{roguelike_8c_aa5928f555650227b6086a164843a0834}\label{roguelike_8c_aa5928f555650227b6086a164843a0834}} 
+void \hyperlink{roguelike_8c_aa5928f555650227b6086a164843a0834}{Affichage} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police, \hyperlink{structSalle}{Salle} salle\mbox{[}\hyperlink{const_8h_a0240ac851181b84ac374872dc5434ee4}{N}\mbox{]}\mbox{[}\hyperlink{const_8h_a52037c938e3c1b126c6277da5ca689d0}{M}\mbox{]}, \hyperlink{structPlayer}{Player} player)
+\begin{DoxyCompactList}\small\item\em Permet de gerer tout l\textquotesingle{}affichage du jeu. \end{DoxyCompactList}\item 
+int \hyperlink{roguelike_8c_aa77fa7c29af0d994685a1929a6bb84b1}{Evolution\+Monstres} (\hyperlink{structSalle}{Salle} salle\mbox{[}\hyperlink{const_8h_a0240ac851181b84ac374872dc5434ee4}{N}\mbox{]}\mbox{[}\hyperlink{const_8h_a52037c938e3c1b126c6277da5ca689d0}{M}\mbox{]}, \hyperlink{structPlayer}{Player} player, \hyperlink{structPlayer}{Player} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Permet de gerer l\textquotesingle{}evolution des monstres. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{roguelike_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{roguelike_8c_a3c04138a5bfe5d72780bb7e82a18e627}} 
+int \hyperlink{roguelike_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Fonction main du programme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{roguelike_8c_a2ef448daa64dc4c81936a4836f21776c}\label{roguelike_8c_a2ef448daa64dc4c81936a4836f21776c}} 
+int \hyperlink{roguelike_8c_a2ef448daa64dc4c81936a4836f21776c}{in\+Game} = 0
+\begin{DoxyCompactList}\small\item\em Permet de savoir si le joueur est dans un menu ou non. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{roguelike_8c_a69d26f73a3a33e36c53e39234b6a4ea4}\label{roguelike_8c_a69d26f73a3a33e36c53e39234b6a4ea4}} 
+int \hyperlink{roguelike_8c_a69d26f73a3a33e36c53e39234b6a4ea4}{in\+Menu} = 1
+\begin{DoxyCompactList}\small\item\em Permet de savoir si le joueur est en partie ou non. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{roguelike_8c_a28ad58afe2d048dbe9f19e8d24a5aa30}\label{roguelike_8c_a28ad58afe2d048dbe9f19e8d24a5aa30}} 
+\hyperlink{menu_8h_af3d52afbb0d088f62e02208b24a9cbd2}{Menu} \hyperlink{roguelike_8c_a28ad58afe2d048dbe9f19e8d24a5aa30}{menu\+Actuel} = Principal
+\begin{DoxyCompactList}\small\item\em Permet de savoir dans quel menu le joueur se trouve (si il est dans un menu) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{roguelike_8c_a185de786e31af0c36cb407963b0d8cdf}\label{roguelike_8c_a185de786e31af0c36cb407963b0d8cdf}} 
+int {\bfseries level\+Actuel} = 1
+\item 
+\mbox{\Hypertarget{roguelike_8c_a45b67662d620a977a2cfe519f7ab6273}\label{roguelike_8c_a45b67662d620a977a2cfe519f7ab6273}} 
+int \hyperlink{roguelike_8c_a45b67662d620a977a2cfe519f7ab6273}{fps} = 0
+\begin{DoxyCompactList}\small\item\em Permet de savoir dans quel niveau le joueur se trouve. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{roguelike_8c_a76f11d9a0a47b94f72c2d0e77fb32240}\label{roguelike_8c_a76f11d9a0a47b94f72c2d0e77fb32240}} 
+int {\bfseries n} = 0
+\item 
+\mbox{\Hypertarget{roguelike_8c_a2e582e232d17b9821d101b0fbb7e837b}\label{roguelike_8c_a2e582e232d17b9821d101b0fbb7e837b}} 
+struct timeb {\bfseries last\+F\+PS}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fichier contenant la fonction main de notre programme. 
+
+\begin{DoxyAuthor}{Auteur}
+H\+E\+N\+RY Allan, S\+T\+ER Maxime, G\+A\+I\+S\+NE Maxime, Z\+H\+E\+NG Haoran 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+04/02/2020 
+\end{DoxyDate}
+
+
+\subsection{Documentation des fonctions}
+\mbox{\Hypertarget{roguelike_8c_aa77fa7c29af0d994685a1929a6bb84b1}\label{roguelike_8c_aa77fa7c29af0d994685a1929a6bb84b1}} 
+\index{roguelike.\+c@{roguelike.\+c}!Evolution\+Monstres@{Evolution\+Monstres}}
+\index{Evolution\+Monstres@{Evolution\+Monstres}!roguelike.\+c@{roguelike.\+c}}
+\subsubsection{\texorpdfstring{Evolution\+Monstres()}{EvolutionMonstres()}}
+{\footnotesize\ttfamily int Evolution\+Monstres (\begin{DoxyParamCaption}\item[{\hyperlink{structSalle}{Salle}}]{salle\mbox{[}\+N\mbox{]}\mbox{[}\+M\mbox{]},  }\item[{\hyperlink{structPlayer}{Player}}]{player,  }\item[{\hyperlink{structPlayer}{Player} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Permet de gerer l\textquotesingle{}evolution des monstres. 
+
+\begin{DoxyReturn}{Renvoie}
+1 Si le joueur est mort suite a une collision avec un mob 
+
+0 Sinon 
+\end{DoxyReturn}

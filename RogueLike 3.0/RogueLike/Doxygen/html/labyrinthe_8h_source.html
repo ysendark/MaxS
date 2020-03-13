@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RogueLike:  Fichier source de src/labyrinthe.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RogueLike
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">labyrinthe.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="labyrinthe_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __LABYRINTHE__</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __LABYRINTHE__</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="salle_8h.html">salle.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="perso_8h.html">perso.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="const_8h.html">const.h</a>&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="labyrinthe_8h.html#aaf50cbb9c664f9d54f9647a832232125">   22</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="labyrinthe_8h.html#aaf50cbb9c664f9d54f9647a832232125">pile</a>[<a class="code" href="const_8h.html#af7a16e2716eaac90fb331c55876cf511">TMAX</a>];</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="labyrinthe_8h.html#ab23513cd1b60a5ce42fdddfb249cbde4">   24</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="labyrinthe_8h.html#ab23513cd1b60a5ce42fdddfb249cbde4">sommet</a>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">void</span> <a class="code" href="labyrinthe_8h.html#ac14ccc6ef670ca1d6a386ddbceada2d0">CheminLePlusLong</a>(<a class="code" href="structLabyrinthe.html">Labyrinthe</a> labyrinthe, <span class="keywordtype">int</span> * labX, <span class="keywordtype">int</span> * labY);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> <a class="code" href="labyrinthe_8h.html#a0a437daa9a5720a9e2a862ad5840d9e9">AfficherMinimap</a>(SDL_Renderer * rendu, <a class="code" href="structSalle.html">Salle</a> salle[<a class="code" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="code" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>], <a class="code" href="structPlayer.html">Player</a> player);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">void</span> <a class="code" href="labyrinthe_8h.html#ac9c9950d92ddaf341926e7dfdcf2d44e">initMat</a> (<span class="keywordtype">int</span> mat[<a class="code" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="code" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>]);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="labyrinthe_8h.html#a122026968176fe1d6314c2fe5368f9ad">initLab</a>(<a class="code" href="structLabyrinthe.html">Labyrinthe</a> * labyrinthe);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> <a class="code" href="labyrinthe_8h.html#ae80f164177c4a91d43dbe86dec168182">ChargerLab</a>(<a class="code" href="structLabyrinthe.html">Labyrinthe</a> * labyrinthe);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> <a class="code" href="labyrinthe_8h.html#a5a1632c9a205c9605994d786b4d227d6">initPile</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> <a class="code" href="labyrinthe_8h.html#a410398477825b2212e1663bb0ed4bba7">empiler</a>(<span class="keywordtype">int</span> v);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="labyrinthe_8h.html#a53ab5fc47e5e8cef40e528998d949ca3">depiler</a>(<span class="keywordtype">int</span> *v);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">int</span> <a class="code" href="labyrinthe_8h.html#a7367aae60f9b65ba335852e1236f34e9">pileVide</a>();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="labyrinthe_8h_html_ac9c9950d92ddaf341926e7dfdcf2d44e"><div class="ttname"><a href="labyrinthe_8h.html#ac9c9950d92ddaf341926e7dfdcf2d44e">initMat</a></div><div class="ttdeci">void initMat(int mat[N][M])</div><div class="ttdoc">Permet d&amp;#39;initialiser une matrice labyrinthe avec que des murs. </div><div class="ttdef"><b>Definition:</b> labyrinthe.c:57</div></div>
+<div class="ttc" id="perso_8h_html"><div class="ttname"><a href="perso_8h.html">perso.h</a></div><div class="ttdoc">Fichier contenant des fonctions nous permettant de gérer la création, la modification et l&amp;#39;affichage ...</div></div>
+<div class="ttc" id="labyrinthe_8h_html_aaf50cbb9c664f9d54f9647a832232125"><div class="ttname"><a href="labyrinthe_8h.html#aaf50cbb9c664f9d54f9647a832232125">pile</a></div><div class="ttdeci">int pile[TMAX]</div><div class="ttdoc">tableau d&amp;#39;entier, nous servant de pile. Sa taille max est défini en constante dans le fichier const...</div><div class="ttdef"><b>Definition:</b> labyrinthe.h:22</div></div>
+<div class="ttc" id="labyrinthe_8h_html_a0a437daa9a5720a9e2a862ad5840d9e9"><div class="ttname"><a href="labyrinthe_8h.html#a0a437daa9a5720a9e2a862ad5840d9e9">AfficherMinimap</a></div><div class="ttdeci">void AfficherMinimap(SDL_Renderer *rendu, Salle salle[N][M], Player player)</div><div class="ttdoc">Permet d&amp;#39;afficher la minimap en prenans en compte les zones visités ou non (pour le brouillard) ainsi...</div><div class="ttdef"><b>Definition:</b> labyrinthe.c:325</div></div>
+<div class="ttc" id="salle_8h_html"><div class="ttname"><a href="salle_8h.html">salle.h</a></div><div class="ttdoc">Fichier contenant les prototypes des fonctions nous permettant de gérer la création et l&amp;#39;affichage de...</div></div>
+<div class="ttc" id="labyrinthe_8h_html_a7367aae60f9b65ba335852e1236f34e9"><div class="ttname"><a href="labyrinthe_8h.html#a7367aae60f9b65ba335852e1236f34e9">pileVide</a></div><div class="ttdeci">int pileVide()</div><div class="ttdoc">Fonction nous permettant de savoir si la pile est vide ou non. </div><div class="ttdef"><b>Definition:</b> labyrinthe.c:46</div></div>
+<div class="ttc" id="labyrinthe_8h_html_ac14ccc6ef670ca1d6a386ddbceada2d0"><div class="ttname"><a href="labyrinthe_8h.html#ac14ccc6ef670ca1d6a386ddbceada2d0">CheminLePlusLong</a></div><div class="ttdeci">void CheminLePlusLong(Labyrinthe labyrinthe, int *labX, int *labY)</div><div class="ttdoc">Nous permet de savoir quel est la salle la plus éloigner du point de spawn (vas nous servir à savroi ...</div><div class="ttdef"><b>Definition:</b> labyrinthe.c:263</div></div>
+<div class="ttc" id="const_8h_html_a0240ac851181b84ac374872dc5434ee4"><div class="ttname"><a href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a></div><div class="ttdeci">#define N</div><div class="ttdoc">Permet de definir la taille du labyrinthe en Y. </div><div class="ttdef"><b>Definition:</b> const.h:26</div></div>
+<div class="ttc" id="structPlayer_html"><div class="ttname"><a href="structPlayer.html">Player</a></div><div class="ttdoc">Permet d&amp;#39;avoir toutes les informations sur un joueur dans une même structure. </div><div class="ttdef"><b>Definition:</b> const.h:193</div></div>
+<div class="ttc" id="labyrinthe_8h_html_a5a1632c9a205c9605994d786b4d227d6"><div class="ttname"><a href="labyrinthe_8h.html#a5a1632c9a205c9605994d786b4d227d6">initPile</a></div><div class="ttdeci">void initPile()</div><div class="ttdoc">Fonction nous permettant d&amp;#39;initier la pile. </div><div class="ttdef"><b>Definition:</b> labyrinthe.c:18</div></div>
+<div class="ttc" id="labyrinthe_8h_html_ab23513cd1b60a5ce42fdddfb249cbde4"><div class="ttname"><a href="labyrinthe_8h.html#ab23513cd1b60a5ce42fdddfb249cbde4">sommet</a></div><div class="ttdeci">int sommet</div><div class="ttdoc">entier nous servant à identifier le sommet de la pile </div><div class="ttdef"><b>Definition:</b> labyrinthe.h:24</div></div>
+<div class="ttc" id="labyrinthe_8h_html_a53ab5fc47e5e8cef40e528998d949ca3"><div class="ttname"><a href="labyrinthe_8h.html#a53ab5fc47e5e8cef40e528998d949ca3">depiler</a></div><div class="ttdeci">void depiler(int *v)</div><div class="ttdoc">Fonction nous permettant d&amp;#39;enlever un élement à la pile. </div><div class="ttdef"><b>Definition:</b> labyrinthe.c:35</div></div>
+<div class="ttc" id="const_8h_html"><div class="ttname"><a href="const_8h.html">const.h</a></div><div class="ttdoc">Fichier contenant les definitions importantes, les prototypes du .c ainsi les typedef en vu de les ut...</div></div>
+<div class="ttc" id="structLabyrinthe_html"><div class="ttname"><a href="structLabyrinthe.html">Labyrinthe</a></div><div class="ttdoc">Permet d&amp;#39;avoir toutes les informations sur le labyrinthe dans une même structure. ...</div><div class="ttdef"><b>Definition:</b> const.h:220</div></div>
+<div class="ttc" id="const_8h_html_af7a16e2716eaac90fb331c55876cf511"><div class="ttname"><a href="const_8h.html#af7a16e2716eaac90fb331c55876cf511">TMAX</a></div><div class="ttdeci">#define TMAX</div><div class="ttdoc">Taille max de la pile. </div><div class="ttdef"><b>Definition:</b> const.h:52</div></div>
+<div class="ttc" id="labyrinthe_8h_html_a410398477825b2212e1663bb0ed4bba7"><div class="ttname"><a href="labyrinthe_8h.html#a410398477825b2212e1663bb0ed4bba7">empiler</a></div><div class="ttdeci">void empiler(int v)</div><div class="ttdoc">Fonction nous permettant d&amp;#39;ajouter un élément à la pile. </div><div class="ttdef"><b>Definition:</b> labyrinthe.c:25</div></div>
+<div class="ttc" id="structSalle_html"><div class="ttname"><a href="structSalle.html">Salle</a></div><div class="ttdoc">Permet d&amp;#39;identifié les salles indépendament des autres et d&amp;#39;y avoir toutes les informations nécessair...</div><div class="ttdef"><b>Definition:</b> const.h:167</div></div>
+<div class="ttc" id="labyrinthe_8h_html_ae80f164177c4a91d43dbe86dec168182"><div class="ttname"><a href="labyrinthe_8h.html#ae80f164177c4a91d43dbe86dec168182">ChargerLab</a></div><div class="ttdeci">void ChargerLab(Labyrinthe *labyrinthe)</div><div class="ttdoc">Permet de générer un labyrinthe de taille N*M (defini dans const.h) à l&amp;#39;aide d&amp;#39;un seed...</div><div class="ttdef"><b>Definition:</b> labyrinthe.c:69</div></div>
+<div class="ttc" id="const_8h_html_a52037c938e3c1b126c6277da5ca689d0"><div class="ttname"><a href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a></div><div class="ttdeci">#define M</div><div class="ttdoc">Permet de definir la taille du labyrinthe en X. </div><div class="ttdef"><b>Definition:</b> const.h:28</div></div>
+<div class="ttc" id="labyrinthe_8h_html_a122026968176fe1d6314c2fe5368f9ad"><div class="ttname"><a href="labyrinthe_8h.html#a122026968176fe1d6314c2fe5368f9ad">initLab</a></div><div class="ttdeci">void initLab(Labyrinthe *labyrinthe)</div><div class="ttdoc">Permet la génération aléatoire du labyrinthe de taille N*M (défini dans const.h) </div><div class="ttdef"><b>Definition:</b> labyrinthe.c:166</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,63 @@
+\hypertarget{saveload_8c}{}\section{Référence du fichier src/saveload.c}
+\label{saveload_8c}\index{src/saveload.\+c@{src/saveload.\+c}}
+
+
+Fichier contenant les fontions nous permettant de gérer la sauvegarde et le chargement de partie.  
+
+
+{\ttfamily \#include \char`\"{}saveload.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Graphe des dépendances par inclusion de saveload.\+c\+:
+% FIG 0
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{saveload_8c_a3d0278632565de5c949641c16a477807}{Sauvegarder\+Partie} (const char name\mbox{[}30\mbox{]}, \hyperlink{structLabyrinthe}{Labyrinthe} labyrinthe, \hyperlink{structPlayer}{Player} player, \hyperlink{structSalle}{Salle} salle\mbox{[}\hyperlink{const_8h_a0240ac851181b84ac374872dc5434ee4}{N}\mbox{]}\mbox{[}\hyperlink{const_8h_a52037c938e3c1b126c6277da5ca689d0}{M}\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction nous permettant de sauvegarder une partie dans un fichier avec le nom rentrer en parametre. \end{DoxyCompactList}\item 
+void \hyperlink{saveload_8c_ab6b886c1430d8b9c6d7bebe44291af89}{Charger\+Partie} (const char name\mbox{[}30\mbox{]}, \hyperlink{structLabyrinthe}{Labyrinthe} $\ast$labyrinthe, \hyperlink{structPlayer}{Player} $\ast$player, \hyperlink{structSalle}{Salle} salle\mbox{[}\hyperlink{const_8h_a0240ac851181b84ac374872dc5434ee4}{N}\mbox{]}\mbox{[}\hyperlink{const_8h_a52037c938e3c1b126c6277da5ca689d0}{M}\mbox{]})
+\begin{DoxyCompactList}\small\item\em Nous permet de charger une partie, partie précédemment enregister dans un fichier dont le nom est rentrer en paramètre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{saveload_8c_a2265b1025d82d961f2bb04d2ab2797b8}\label{saveload_8c_a2265b1025d82d961f2bb04d2ab2797b8}} 
+void {\bfseries Sauvegarder\+Son} ()
+\item 
+\mbox{\Hypertarget{saveload_8c_a55765a7edc09a2c6f2fb6e25fda596c1}\label{saveload_8c_a55765a7edc09a2c6f2fb6e25fda596c1}} 
+void {\bfseries Charger\+Son} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fichier contenant les fontions nous permettant de gérer la sauvegarde et le chargement de partie. 
+
+\begin{DoxyAuthor}{Auteur}
+H\+E\+N\+RY Allan, S\+T\+ER Maxime, G\+A\+I\+S\+NE Maxime, Z\+H\+E\+NG Haoran 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09/02/2020 
+\end{DoxyDate}
+
+
+\subsection{Documentation des fonctions}
+\mbox{\Hypertarget{saveload_8c_ab6b886c1430d8b9c6d7bebe44291af89}\label{saveload_8c_ab6b886c1430d8b9c6d7bebe44291af89}} 
+\index{saveload.\+c@{saveload.\+c}!Charger\+Partie@{Charger\+Partie}}
+\index{Charger\+Partie@{Charger\+Partie}!saveload.\+c@{saveload.\+c}}
+\subsubsection{\texorpdfstring{Charger\+Partie()}{ChargerPartie()}}
+{\footnotesize\ttfamily void Charger\+Partie (\begin{DoxyParamCaption}\item[{const char}]{name\mbox{[}30\mbox{]},  }\item[{\hyperlink{structLabyrinthe}{Labyrinthe} $\ast$}]{labyrinthe,  }\item[{\hyperlink{structPlayer}{Player} $\ast$}]{player,  }\item[{\hyperlink{structSalle}{Salle}}]{salle\mbox{[}\+N\mbox{]}\mbox{[}\+M\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Nous permet de charger une partie, partie précédemment enregister dans un fichier dont le nom est rentrer en paramètre. 
+
+la fonction va charger toutes les informations qui sont sauvegarder dans la fonction Sauvegarder\+Partie \mbox{\Hypertarget{saveload_8c_a3d0278632565de5c949641c16a477807}\label{saveload_8c_a3d0278632565de5c949641c16a477807}} 
+\index{saveload.\+c@{saveload.\+c}!Sauvegarder\+Partie@{Sauvegarder\+Partie}}
+\index{Sauvegarder\+Partie@{Sauvegarder\+Partie}!saveload.\+c@{saveload.\+c}}
+\subsubsection{\texorpdfstring{Sauvegarder\+Partie()}{SauvegarderPartie()}}
+{\footnotesize\ttfamily void Sauvegarder\+Partie (\begin{DoxyParamCaption}\item[{const char}]{name\mbox{[}30\mbox{]},  }\item[{\hyperlink{structLabyrinthe}{Labyrinthe}}]{labyrinthe,  }\item[{\hyperlink{structPlayer}{Player}}]{player,  }\item[{\hyperlink{structSalle}{Salle}}]{salle\mbox{[}\+N\mbox{]}\mbox{[}\+M\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction nous permettant de sauvegarder une partie dans un fichier avec le nom rentrer en parametre. 
+
+La fonction va sauvegarder le labyrinthe (son seed), toutes les informations de la structure player, ainsi que toutes les informations des structures salle 

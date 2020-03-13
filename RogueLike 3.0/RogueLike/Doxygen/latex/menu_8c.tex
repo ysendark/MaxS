@@ -1,0 +1,77 @@
+\hypertarget{menu_8c}{}\section{Référence du fichier src/menu.c}
+\label{menu_8c}\index{src/menu.\+c@{src/menu.\+c}}
+
+
+Fichier contenant des fonctions nous permettant de gérer la création et l\textquotesingle{}affichage des différents menus.  
+
+
+{\ttfamily \#include \char`\"{}menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}saveload.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de menu.\+c\+:
+% FIG 0
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{menu_8c_ab99a750ba7befa741891ac4f103d8b2b}\label{menu_8c_ab99a750ba7befa741891ac4f103d8b2b}} 
+void \hyperlink{menu_8c_ab99a750ba7befa741891ac4f103d8b2b}{Afficher\+Menu\+Regles} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher le menu affichants les différentes règles du jeu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8c_a44a64a689a213f32eade2fea614086ef}\label{menu_8c_a44a64a689a213f32eade2fea614086ef}} 
+void \hyperlink{menu_8c_a44a64a689a213f32eade2fea614086ef}{Afficher\+Menu\+Principal} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher le menu Principal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8c_a907f3b3a9c19c955385d032d2fcb16c3}\label{menu_8c_a907f3b3a9c19c955385d032d2fcb16c3}} 
+void \hyperlink{menu_8c_a907f3b3a9c19c955385d032d2fcb16c3}{Afficher\+Menu\+Charger\+Partie} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher le menu Charger Partie. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8c_a960a3ca8515c944f290a27c17506daef}\label{menu_8c_a960a3ca8515c944f290a27c17506daef}} 
+void {\bfseries Afficher\+Menu\+Volume} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\item 
+\mbox{\Hypertarget{menu_8c_a72920d6821f6e6878d0282777f77b3fb}\label{menu_8c_a72920d6821f6e6878d0282777f77b3fb}} 
+void \hyperlink{menu_8c_a72920d6821f6e6878d0282777f77b3fb}{Afficher\+Menu\+Setting} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher le menu option. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8c_a35b7f6ab5ecd7c1fc1c65a62de60083a}\label{menu_8c_a35b7f6ab5ecd7c1fc1c65a62de60083a}} 
+void {\bfseries Afficher\+Menu\+Touches} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\item 
+\mbox{\Hypertarget{menu_8c_a58016cf4c3fc033f2bec3d49e08a6c74}\label{menu_8c_a58016cf4c3fc033f2bec3d49e08a6c74}} 
+\hyperlink{menu_8h_af3d52afbb0d088f62e02208b24a9cbd2}{Menu} \hyperlink{menu_8c_a58016cf4c3fc033f2bec3d49e08a6c74}{choix\+Menu} (\hyperlink{menu_8h_af3d52afbb0d088f62e02208b24a9cbd2}{Menu} \hyperlink{roguelike_8c_a28ad58afe2d048dbe9f19e8d24a5aa30}{menu\+Actuel})
+\begin{DoxyCompactList}\small\item\em Permet, dans le menu choisi, de séléctionner une intéraction en cliquant sur un des boutons. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8c_a8c3686f3f6793be58af8d99d1bbe0dfa}\label{menu_8c_a8c3686f3f6793be58af8d99d1bbe0dfa}} 
+void \hyperlink{menu_8c_a8c3686f3f6793be58af8d99d1bbe0dfa}{Afficher\+Menu\+Sauvegarde\+IG} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\begin{DoxyCompactList}\small\item\em Nous permet d\textquotesingle{}afficher le menu de sauvegarde en jeu. \end{DoxyCompactList}\item 
+void \hyperlink{menu_8c_a5efe712a52021f5d14e906e986a7d20f}{Afficher\+Menu\+IG} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police)
+\begin{DoxyCompactList}\small\item\em Affichage du menu In Game. Réalise aussi le traitement du choix du joueur \+: -\/ Resume \+: Reprend la partie -\/ Quit \+: Menu principal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{menu_8c_a22788e9e61c2236b315adda45a91533b}\label{menu_8c_a22788e9e61c2236b315adda45a91533b}} 
+Menu\+IG {\bfseries choix\+Menu\+IG} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, T\+T\+F\+\_\+\+Font $\ast$police, Menu\+IG \hyperlink{roguelike_8c_a28ad58afe2d048dbe9f19e8d24a5aa30}{menu\+Actuel})
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fichier contenant des fonctions nous permettant de gérer la création et l\textquotesingle{}affichage des différents menus. 
+
+\begin{DoxyAuthor}{Auteur}
+H\+E\+N\+RY Allan, S\+T\+ER Maxime, G\+A\+I\+S\+NE Maxime, Z\+H\+E\+NG Haoran 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+04/02/2020 
+\end{DoxyDate}
+
+
+\subsection{Documentation des fonctions}
+\mbox{\Hypertarget{menu_8c_a5efe712a52021f5d14e906e986a7d20f}\label{menu_8c_a5efe712a52021f5d14e906e986a7d20f}} 
+\index{menu.\+c@{menu.\+c}!Afficher\+Menu\+IG@{Afficher\+Menu\+IG}}
+\index{Afficher\+Menu\+IG@{Afficher\+Menu\+IG}!menu.\+c@{menu.\+c}}
+\subsubsection{\texorpdfstring{Afficher\+Menu\+I\+G()}{AfficherMenuIG()}}
+{\footnotesize\ttfamily void Afficher\+Menu\+IG (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{rendu,  }\item[{T\+T\+F\+\_\+\+Font $\ast$}]{police }\end{DoxyParamCaption})}
+
+
+
+Affichage du menu In Game. Réalise aussi le traitement du choix du joueur \+: -\/ Resume \+: Reprend la partie -\/ Quit \+: Menu principal. 
+
+\begin{DoxyReturn}{Renvoie}
+0 si Resume 
+
+1 si Menu Principal 
+
+2 si Quit 
+\end{DoxyReturn}

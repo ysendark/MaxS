@@ -1,0 +1,35 @@
+\hypertarget{salle_8c}{}\section{Référence du fichier src/salle.c}
+\label{salle_8c}\index{src/salle.\+c@{src/salle.\+c}}
+
+
+Fichier contenant des fonctions nous permettant de gérer la création et l\textquotesingle{}affichage des salles.  
+
+
+{\ttfamily \#include \char`\"{}salle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}monstre.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}objet.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de salle.\+c\+:
+% FIG 0
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{salle_8c_a3c572b16fd87b679844e04e120f2c0f4}\label{salle_8c_a3c572b16fd87b679844e04e120f2c0f4}} 
+void \hyperlink{salle_8c_a3c572b16fd87b679844e04e120f2c0f4}{init\+Salle} (\hyperlink{structSalle}{Salle} salle\mbox{[}\hyperlink{const_8h_a0240ac851181b84ac374872dc5434ee4}{N}\mbox{]}\mbox{[}\hyperlink{const_8h_a52037c938e3c1b126c6277da5ca689d0}{M}\mbox{]}, int mat\mbox{[}\hyperlink{const_8h_a0240ac851181b84ac374872dc5434ee4}{N}\mbox{]}\mbox{[}\hyperlink{const_8h_a52037c938e3c1b126c6277da5ca689d0}{M}\mbox{]}, \hyperlink{structPlayer}{Player} player)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}initialiser la matrice de type \hyperlink{structSalle}{Salle}. Si le lieu est un couloir \+: On vas enregister où se trouve les couloirs à proximité puis indiquer les directions des portes. Si le lieu est un mur \+: On initialise tout à 0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{salle_8c_a17a8740b73b4a45122ba6f57c302a8e0}\label{salle_8c_a17a8740b73b4a45122ba6f57c302a8e0}} 
+void \hyperlink{salle_8c_a17a8740b73b4a45122ba6f57c302a8e0}{Afficher\+Salle} (S\+D\+L\+\_\+\+Renderer $\ast$rendu, \hyperlink{structSalle}{Salle} salle, \hyperlink{structPlayer}{Player} player, int level\+Actuel)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher une salle (Zone principal de l\textquotesingle{}ecran) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fichier contenant des fonctions nous permettant de gérer la création et l\textquotesingle{}affichage des salles. 
+
+\begin{DoxyAuthor}{Auteur}
+H\+E\+N\+RY Allan, S\+T\+ER Maxime, G\+A\+I\+S\+NE Maxime, Z\+H\+E\+NG Haoran 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+04/02/2020 
+\end{DoxyDate}

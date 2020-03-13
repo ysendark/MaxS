@@ -1,0 +1,46 @@
+\hypertarget{roguelike_8c}{}\section{Référence du fichier src/roguelike.c}
+\label{roguelike_8c}\index{src/roguelike.\+c@{src/roguelike.\+c}}
+
+
+Fichier contenant la fonction main de notre programme.  
+
+
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}labyrinthe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}perso.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de roguelike.\+c\+:
+% FIG 0
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{roguelike_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{roguelike_8c_a3c04138a5bfe5d72780bb7e82a18e627}} 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{roguelike_8c_a2ef448daa64dc4c81936a4836f21776c}\label{roguelike_8c_a2ef448daa64dc4c81936a4836f21776c}} 
+int {\bfseries in\+Game} = 0
+\item 
+\mbox{\Hypertarget{roguelike_8c_a69d26f73a3a33e36c53e39234b6a4ea4}\label{roguelike_8c_a69d26f73a3a33e36c53e39234b6a4ea4}} 
+int {\bfseries in\+Menu} = 1
+\item 
+\mbox{\Hypertarget{roguelike_8c_a28ad58afe2d048dbe9f19e8d24a5aa30}\label{roguelike_8c_a28ad58afe2d048dbe9f19e8d24a5aa30}} 
+Menu {\bfseries menu\+Actuel} = Principal
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fichier contenant la fonction main de notre programme. 
+
+\begin{DoxyAuthor}{Auteur}
+H\+E\+N\+RY Allan, S\+T\+ER Maxime, G\+A\+I\+N\+SE Maxime, J\+SP J\+SP 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+04/02/2020 
+\end{DoxyDate}

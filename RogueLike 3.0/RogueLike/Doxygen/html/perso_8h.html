@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RogueLike: Référence du fichier src/perso.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RogueLike
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier perso.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fichier contenant des fonctions nous permettant de gérer la création, la modification et l'affichage du joueur.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="salle_8h_source.html">salle.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="menu_8h_source.html">menu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fevent_8h_source.html">fevent.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="labyrinthe_8h_source.html">labyrinthe.h</a>&quot;</code><br />
+<code>#include &lt;SDL2/SDL.h&gt;</code><br />
+<code>#include &lt;SDL2/SDL_ttf.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de perso.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="perso_8h__incl.png" border="0" usemap="#src_2perso_8h" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="perso_8h__dep__incl.png" border="0" usemap="#src_2perso_8hdep" alt=""/></div>
+<!-- MAP 1 -->
+</div>
+</div>
+<p><a href="perso_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ad2da8ead95f184284e55c1484209c4e7"><td class="memItemLeft" align="right" valign="top"><a id="ad2da8ead95f184284e55c1484209c4e7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perso_8h.html#ad2da8ead95f184284e55c1484209c4e7">HP_BAR_X</a>&#160;&#160;&#160;300</td></tr>
+<tr class="memdesc:ad2da8ead95f184284e55c1484209c4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de savoir la taille horizontalement de la bar de vie. <br /></td></tr>
+<tr class="separator:ad2da8ead95f184284e55c1484209c4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2c915926cb775a76ef8277bc144c46"><td class="memItemLeft" align="right" valign="top"><a id="a4c2c915926cb775a76ef8277bc144c46"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perso_8h.html#a4c2c915926cb775a76ef8277bc144c46">HP_BAR_Y</a>&#160;&#160;&#160;30</td></tr>
+<tr class="memdesc:a4c2c915926cb775a76ef8277bc144c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de savoir la taille verticalement de la bar de vie. <br /></td></tr>
+<tr class="separator:a4c2c915926cb775a76ef8277bc144c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a62144e38aa9ec7b3cd5b06d9dd8a9"><td class="memItemLeft" align="right" valign="top"><a id="a54a62144e38aa9ec7b3cd5b06d9dd8a9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perso_8h.html#a54a62144e38aa9ec7b3cd5b06d9dd8a9">PLAYER_DEFAULT_DAMAGE</a>&#160;&#160;&#160;30</td></tr>
+<tr class="memdesc:a54a62144e38aa9ec7b3cd5b06d9dd8a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de savoir le nombre de dégats que fait le joueur par défaut. <br /></td></tr>
+<tr class="separator:a54a62144e38aa9ec7b3cd5b06d9dd8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a750cae3714dcd2e1f482b72131cfd9e2"><td class="memItemLeft" align="right" valign="top"><a id="a750cae3714dcd2e1f482b72131cfd9e2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perso_8h.html#a750cae3714dcd2e1f482b72131cfd9e2">PLAYER_DEFAULT_HEALTH</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:a750cae3714dcd2e1f482b72131cfd9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de savoir le nombre de points de vies qu'a le joueur par défaut. <br /></td></tr>
+<tr class="separator:a750cae3714dcd2e1f482b72131cfd9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a19caac2706a8623683fc73bd94daa2e7"><td class="memItemLeft" align="right" valign="top"><a id="a19caac2706a8623683fc73bd94daa2e7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perso_8h.html#a19caac2706a8623683fc73bd94daa2e7">initPlayer</a> (<a class="el" href="structPlayer.html">Player</a> *player, int labX, int labY, int salleX, int salleY)</td></tr>
+<tr class="memdesc:a19caac2706a8623683fc73bd94daa2e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'initialiser une structure player. <br /></td></tr>
+<tr class="separator:a19caac2706a8623683fc73bd94daa2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b821b141a87a6c9dff2dfbcf85ff76f"><td class="memItemLeft" align="right" valign="top"><a id="a2b821b141a87a6c9dff2dfbcf85ff76f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perso_8h.html#a2b821b141a87a6c9dff2dfbcf85ff76f">ActionSalle</a> (<a class="el" href="structInput.html">Input</a> *in, SDL_Renderer *rendu, TTF_Font *police, <a class="el" href="structPlayer.html">Player</a> *player, <a class="el" href="structSalle.html">Salle</a> salle, int *<a class="el" href="roguelike_8c.html#a2ef448daa64dc4c81936a4836f21776c">inGame</a>, int *<a class="el" href="roguelike_8c.html#a69d26f73a3a33e36c53e39234b6a4ea4">inMenu</a>, int *levelActuel, <a class="el" href="menu_8h.html#af3d52afbb0d088f62e02208b24a9cbd2">Menu</a> *<a class="el" href="roguelike_8c.html#a28ad58afe2d048dbe9f19e8d24a5aa30">menuActuel</a>, <a class="el" href="structPlayer.html">Player</a> playerSave, <a class="el" href="structSalle.html">Salle</a> salleSave[<a class="el" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="el" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>], <a class="el" href="structLabyrinthe.html">Labyrinthe</a> labyrinthe)</td></tr>
+<tr class="memdesc:a2b821b141a87a6c9dff2dfbcf85ff76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de gerer le mouvement du personnage dans une salle. <br /></td></tr>
+<tr class="separator:a2b821b141a87a6c9dff2dfbcf85ff76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a212450fae2de205e2a897ca2464c1111"><td class="memItemLeft" align="right" valign="top"><a id="a212450fae2de205e2a897ca2464c1111"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perso_8h.html#a212450fae2de205e2a897ca2464c1111">AfficherPlayerSalle</a> (SDL_Renderer *rendu, int x, int y)</td></tr>
+<tr class="memdesc:a212450fae2de205e2a897ca2464c1111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'afficher la joueur dans la salle à la position x - y. <br /></td></tr>
+<tr class="separator:a212450fae2de205e2a897ca2464c1111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7e3688b189f1f67327fba44adf45a5"><td class="memItemLeft" align="right" valign="top"><a id="afc7e3688b189f1f67327fba44adf45a5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perso_8h.html#afc7e3688b189f1f67327fba44adf45a5">AfficherPlayerMinimap</a> (SDL_Renderer *rendu, int x, int y, int px, int py)</td></tr>
+<tr class="memdesc:afc7e3688b189f1f67327fba44adf45a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'afficher la joueur sur la minimap à la position x - y. <br /></td></tr>
+<tr class="separator:afc7e3688b189f1f67327fba44adf45a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e434f255e959b18f6ae19c094cfc3a"><td class="memItemLeft" align="right" valign="top"><a id="aa9e434f255e959b18f6ae19c094cfc3a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perso_8h.html#aa9e434f255e959b18f6ae19c094cfc3a">AfficherHUD</a> (SDL_Renderer *rendu, <a class="el" href="structSalle.html">Salle</a> salle[<a class="el" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="el" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>], <a class="el" href="structPlayer.html">Player</a> player)</td></tr>
+<tr class="memdesc:aa9e434f255e959b18f6ae19c094cfc3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'afficher l'HUD (Head Up Display). Ceci permet au joueur d'avoir les informations les plus utiles à porter de main (comme par exemple sa barre de vie) <br /></td></tr>
+<tr class="separator:aa9e434f255e959b18f6ae19c094cfc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4311c4be1054db16b5e9702600aaaab6"><td class="memItemLeft" align="right" valign="top"><a id="a4311c4be1054db16b5e9702600aaaab6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perso_8h.html#a4311c4be1054db16b5e9702600aaaab6">PassagePorte</a> (<a class="el" href="structSalle.html">Salle</a> salle[<a class="el" href="const_8h.html#a0240ac851181b84ac374872dc5434ee4">N</a>][<a class="el" href="const_8h.html#a52037c938e3c1b126c6277da5ca689d0">M</a>], int *salleX, int *salleY, int *playerX, int *playerY)</td></tr>
+<tr class="memdesc:a4311c4be1054db16b5e9702600aaaab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant à un joueur de passer d'une salle a une autre. Permet également de mettre à jour la minimap en ajoutant la salle comme explorer. <br /></td></tr>
+<tr class="separator:a4311c4be1054db16b5e9702600aaaab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d1332443f1f4eed5ec619be5ecf4bb"><td class="memItemLeft" align="right" valign="top"><a id="a23d1332443f1f4eed5ec619be5ecf4bb"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perso_8h.html#a23d1332443f1f4eed5ec619be5ecf4bb">CollisionMob</a> (int pX, int pY, int mX, int mY, int mTailleX, int mTailleY)</td></tr>
+<tr class="memdesc:a23d1332443f1f4eed5ec619be5ecf4bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de savoir si un joueur rentre en collision avec un mob. <br /></td></tr>
+<tr class="separator:a23d1332443f1f4eed5ec619be5ecf4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f99d226acff187b52b53756606e0d52"><td class="memItemLeft" align="right" valign="top"><a id="a9f99d226acff187b52b53756606e0d52"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="perso_8h.html#a9f99d226acff187b52b53756606e0d52">AfficherInventaire</a> (SDL_Renderer *rendu, <a class="el" href="const_8h.html#a3eb470313bbbc3a8c713e8f40336e254">Inventaire</a> inventaire, TTF_Font *police)</td></tr>
+<tr class="memdesc:a9f99d226acff187b52b53756606e0d52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d'afficher l'inventaire du joueur. <br /></td></tr>
+<tr class="separator:a9f99d226acff187b52b53756606e0d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fichier contenant des fonctions nous permettant de gérer la création, la modification et l'affichage du joueur. </p>
+<dl class="section author"><dt>Auteur</dt><dd>HENRY Allan, STER Maxime, GAISNE Maxime, ZHENG Haoran </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.2 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>04/02/2020 </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
